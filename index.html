@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teo Kocev</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div class="header">
+        <img src="tk_logo.png" height="50" alt="Teo Kocev">
+        <div class="langAndMenu">
+            <!-- <div class="languages">
+                <img onclick="window.location='indexMK.html'" src="Flag_of_North_Macedonia.svg.jpg" alt="" height="25">
+                <img onclick="window.location='indexAL.html'" src="albanian.png" alt="" height="25">
+                <img onclick="window.location='index.html'" src="Flag_of_the_United_Kingdom_(1-2).svg.jpg" alt="" height="25">
+            </div> -->
+            <div class="menu">
+                <div id="n" class="menuItem" value="1">About Me</div>
+                <div id="n" class="menuItem" value="2">Skills</div>
+                <div id="n" class="menuItem" value="3">Education</div>
+                <div id="n" class="menuItem" value="4">Portfolio</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div id="leftArrow" class="arrow">&#x2039;</div>
+        <div id="rightArrow" class="arrow">&#x203A;</div>
+<!--Section 1-->
+        <div class="section" id="mainSecParent" value="1">
+            <div id="mainSec"><img src="pfp_final5.png" height="600" alt="Me" id="mePic">
+                <div class="whoAmI">
+                    <div class="h">I am a <span id="developer" style="color:coral;">Developer</span></div>
+                    <div class="p" style="opacity:0.9;max-width:500px;">
+                        I am a Full Stack Web Developer 
+                        with experience in developing 
+                        Web applications using high end 
+                        technologies like HTML, CSS, 
+                        JavaScript, Python, Django and more!
+                    </div>
+                    <button id="contactBtn" class="button-86" role="button">Hire Me!</button>
+                    <div class="meInfo">
+                        <div class="infoDiv">
+                            <img src="birthday-cake.png" alt="" height="30">
+                            <div class="p">12 Aug. 2006</div>
+                        </div>
+                        <div class="infoDiv">
+                            <img src="macedonia_flag.png" alt="" width="30">
+                            <div class="p">Radovish, Macedonia</div>
+                        </div>
+                        <div class="infoDiv">
+                            <img src="gmail_icon.png" alt="" width="30">
+                            <div class="p" id="sendEmail" onclick="window.location='https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdKPkjNdFcnfHZpWxqWrKCmfdrDLxxGfphshfDXVvNRCvRpVPTZTbTxsFvRnxRdVZfPXBHg'">teokocevcode@gmail.com</div>
+                        </div>
+                    </div>
+                </div></div>
+            <div class="form">
+                <form action="https://formspree.io/f/moqgpdzl" method="post">
+                    <h1>‎ Contact</h1>
+                    <label for="name">Fill in your info:</label>
+                    <input placeholder="Name & Surname" type="text" id="name">
+                    <input placeholder="Email" type="email">
+                    <label id="textareaLabel" for="textarea">What service would you want?</label>
+                    <textarea placeholder="Write a message..." name="message" id="message" cols="30" rows="7"></textarea>
+                    <button class="button-86" id="submit" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="footerParent">
+                <div class="footer">
+                    <img onclick="window.location='https://www.instagram.com/teo_kocev?igsh=Zjc2OXU5MzV1enRz'" src="insta_logo.png" alt="" height="30">
+                    <img onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'" src="linkedin_logo_white.png" alt="" height="30">
+                </div>
+            </div>
+        </div>
+<!--Section 2-->
+        <div class="section" id="skillsSec" value="2">
+            <div class="h" style="text-align:center;">Skills</div>
+            <div class="overallSkills">
+                <div class="overallSkill">
+                    <h1>Web Development</h1>
+                    <div class="p" style="opacity:0.8;">
+                        After I got introduced to HTML 
+                        I really fell in love with creating websites
+                        and making them interactive and responsive.
+                        It was amazing how much information was out there
+                        and the ability to transition from web development
+                        to any other type of development fascinated me.
+                    </div>
+                </div>
+                <div class="overallSkill">
+                    <h1>Database Managment</h1>
+                    <div class="p" style="opacity:0.8;">
+                        When I was learning backend development 
+                        I was fascinated how usefull it can be 
+                        to be able to store all of the data that
+                        is submited thru the front-end and send it
+                        to a database. I found managing databases quite
+                        interesting so I was keen on learning more.
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill">
+                    <img title="HTML" src="html_logo.png" height="120" alt="html" value="1">
+                    <div class="skillBar">
+                        <div class="skillBarLoaded" style="width:100%;border-radius:5px;"></div>
+                    </div>
+                    <div class="barInfo">
+                        <p>HTML</p>
+                        <p>100%</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img title="CSS"src="css_logo.png" height="120" alt="css" value="2">
+                    <div class="skillBar">
+                        <div class="skillBarLoaded" style="width:90%;"></div>
+                    </div>
+                    <div class="barInfo">
+                        <p>CSS</p>
+                        <p>90%</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img title="JavaScript" src="JS.svg" height="120" alt="javascript" value="3">
+                    <div class="skillBar">
+                        <div class="skillBarLoaded" style="width:90%;"></div>
+                    </div>
+                    <div class="barInfo">
+                        <p>JavaScript</p>
+                        <p>90%</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img title="C++" src="CPlusPlus.svg" height="120" alt="cplusplus" value="4">
+                    <div class="skillBar">
+                        <div class="skillBarLoaded" style="width:90%;"></div>
+                    </div>
+                    <div class="barInfo">
+                        <p>C++</p>
+                        <p>90%</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img title="Python" src="Python.svg" height="120" alt="python" value="5">
+                    <div class="skillBar">
+                        <div class="skillBarLoaded" style="width:80%;"></div>
+                    </div>
+                    <div class="barInfo">
+                        <p>Python</p>
+                        <p>80%</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img title="MySQL" src="Mysql_logo.png" width="120" alt="mysql" value="6">
+                    <div class="skillBar">
+                        <div class="skillBarLoaded" style="width:100%;border-radius:5px;"></div>
+                    </div>
+                    <div class="barInfo">
+                        <p>MySQL</p>
+                        <p>100%</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img title="PHP" src="PHP.svg" width="120" alt="php" value="7">
+                    <div class="skillBar">
+                        <div class="skillBarLoaded" style="width:90%;"></div>
+                    </div>
+                    <div class="barInfo">
+                        <p>PHP</p>
+                        <p>90%</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img title="Django" src="django-icon.png" height="120" alt="django" value="8">
+                    <div class="skillBar">
+                        <div class="skillBarLoaded" style="width:75%;"></div>
+                    </div>
+                    <div class="barInfo">
+                        <p>Django</p>
+                        <p>75%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footerParent">
+                <div class="footer">
+                    <img onclick="window.location='https://www.instagram.com/teo_kocev?igsh=Zjc2OXU5MzV1enRz'" src="insta_logo.png" alt="" height="30">
+                    <img onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'" src="linkedin_logo_white.png" alt="" height="30">
+                </div>
+            </div>
+        </div>
+<!--Section 3-->
+        <div class="section" id="educationSec" value="3">
+            <div class="educationDesc">
+                <div class="h" style="text-align:center;">Education</div>
+                <div class="p">
+                    These are the <span class="glowP" style="color:coral;">certificates</span> I have acquired:
+                </div>
+            </div>
+            <div class="education">
+                <div class="school1" value="1">
+                    <div class="school">
+                        <img src="semos.png" width="180" alt="">
+                        <div class="p">Programming with C++</div>
+                        <ul>
+                            <li>Started - 2019</li>
+                            <li style="margin-top:5px;">Finished - 2020</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="2">
+                    <div class="school">
+                        <img src="semos.png" width="180" alt="">
+                        <div class="p">Advanced C++</div>
+                        <ul>
+                            <li>Started - 2020</li>
+                            <li style="margin-top:5px;">Finished - 2020</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="3">
+                    <div class="school">
+                        <img src="semos.png" width="180" alt="">
+                        <div class="p">Programming with C#</div>
+                        <ul>
+                            <li>Started - 2020</li>
+                            <li style="margin-top:5px;">Finished - 2021</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="4">
+                    <div class="school">
+                        <img src="meta3.png" width="180" alt="">
+                        <div class="p">Front End Development</div>
+                        <ul>
+                            <li>Started - 2022</li>
+                            <li style="margin-top:5px;">Finished - 2022</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="5">
+                    <div class="school">
+                        <img src="meta3.png" width="180" alt="">
+                        <div class="p">Programming with<br>JavaScript</div>
+                        <ul>
+                            <li>Started - 2022</li>
+                            <li style="margin-top:5px;">Finished - 2023</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="6">
+                    <div class="school">
+                        <img src="meta3.png" width="180" alt="">
+                        <div class="p">Version Control with Git</div>
+                        <ul>
+                            <li>Started - 2023</li>
+                            <li style="margin-top:5px;">Finished - 2023</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+            </div>
+            <div class="footerParent">
+                <div class="footer">
+                    <img onclick="window.location='https://www.instagram.com/teo_kocev?igsh=Zjc2OXU5MzV1enRz'" src="insta_logo.png" alt="" height="30">
+                    <img onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'" src="linkedin_logo_white.png" alt="" height="30">
+                </div>
+            </div>
+        </div>
+<!--Section 4-->
+        <div class="section" id="expSec" value="4">
+            <div id="expDesc">
+                <div class="h" style="text-align:center;">Portfolio</div>
+            </div>
+            <div class="projects">
+                <div class="project" id="randPhotos" onclick="window.location= 'https://demo.100jsprojects.com/random-photos'">
+                    <div class="imageCover"></div>
+                    <img src="pj2.jpg">
+                </div>
+                <div class="projectSide" id="randPhotos1">
+                    <div class="projectDesc">
+                        <div class="bulletPoint">
+                            <div class="bulletPointCenter"></div>
+                        </div>
+                        <div class="p">
+                            This is a web application that generates random photos. 
+                            It was made using HTML, CSS and JavaScript.
+                        </div>
+                    </div>
+                    <div class="langBar">
+                        <div class="bar">
+                            <div class="htmlBar"></div>
+                            <div class="cssBar"></div>
+                            <div class="jsBar"></div>
+                        </div>
+                        <div class="percanteges">
+                            <h4 style="display:flex;align-items:center;"> <span style="color:white;font-size:30px;">&#8226</span>‎ HTML</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:coral;font-size:30px;">&#8226</span>‎ CSS</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:yellow;font-size:30px;">&#8226</span>‎ JS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="calendar" onclick="window.location = 'https://demo.100jsprojects.com/month-calender'">
+                    <div class="imageCover"></div>
+                    <img src="pj3.jpg">
+                </div>
+                <div class="projectSide" id="calendar1">
+                    <div class="projectDesc">
+                        <div class="bulletPoint">
+                            <div class="bulletPointCenter"></div>
+                        </div>
+                        <div class="p">
+                            This is a simple web application that displays the current
+                            date. It was made with HTML, CSS and JavaScript. 
+                        </div>
+                    </div>
+                    <div class="langBar">
+                        <div class="bar">
+                            <div class="htmlBar"></div>
+                            <div class="cssBar"></div>
+                            <div class="jsBar"></div>
+                        </div>
+                        <div class="percanteges">
+                            <h4 style="display:flex;align-items:center;"> <span style="color:white;font-size:30px;">&#8226</span>‎ HTML</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:coral;font-size:30px;">&#8226</span>‎ CSS</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:yellow;font-size:30px;">&#8226</span>‎ JS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="imageSlider" onclick="window.location = 'https://demo.100jsprojects.com/rotating-image-gallery'">
+                    <div class="imageCover"></div>
+                    <img src="pj4.jpg">
+                </div>
+                <div class="projectSide" id="imageSlider1">
+                    <div class="projectDesc">
+                        <div class="bulletPoint">
+                            <div class="bulletPointCenter"></div>
+                        </div>
+                        <div class="p">
+                            This is a web application that has several photos
+                            and slides through them. It was made with HTML, CSS and
+                            JavaSctipt.
+                        </div>
+                    </div>
+                    <div class="langBar">
+                        <div class="bar">
+                            <div class="htmlBar"></div>
+                            <div class="cssBar"></div>
+                            <div class="jsBar"></div>
+                        </div>
+                        <div class="percanteges">
+                            <h4 style="display:flex;align-items:center;"> <span style="color:white;font-size:30px;">&#8226</span>‎ HTML</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:coral;font-size:30px;">&#8226</span>‎ CSS</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:yellow;font-size:30px;">&#8226</span>‎ JS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerParent">
+                <div class="footer">
+                    <img onclick="window.location='https://www.instagram.com/teo_kocev?igsh=Zjc2OXU5MzV1enRz'" src="insta_logo.png" alt="" height="30">
+                    <img onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'" src="linkedin_logo_white.png" alt="" height="30">
+                </div>
+            </div>
+        </div>
+<!--Section 5-->
+<!-- <div id="linkedinDiv" onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'">
+    <img src="linkedin_logo.png" id="linkedin" alt="linkedin" height="30">
+</div> -->
+
+<!--Certificates-->
+        <div class="parentCert" value="1">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="semos.png" width="300" alt="">
+                <div class="h">Programming with C++</div>
+                <div class="p">In the time of this course I learned the fundamentals
+                of the programming language C++, as well as I advanced my algorithmic
+                thinking on solving difficult coding problems. This is where my love
+                for programming began.</div>
+                <ul>
+                    <li>Started - 2019</li>
+                    <li style="margin-top:5px;">Finished - 2020</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="2">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="semos.png" width="300" alt="">
+                <div class="h">Advanced C++</div>
+                <div class="p">
+                In the time of this course I upped my skills wtih with the programming
+                language C++, and here I was able to learn some techniques
+                that got me involved into competing in Algortihms and Data
+                Structures based competitions and I've been competing ever since.
+                </div>
+                <ul>
+                    <li>Started - 2020</li>
+                    <li style="margin-top:5px;">Finished - 2020</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="3">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="semos.png" width="300" alt="">
+                <div class="h">Programming with C#</div>
+                <div class="p">
+                    In the time of this course I got introduced to the
+                    programming language C# and the creation of Windows apps.
+                    I learned the fundamentals and how to operate in Visual Studio.
+                </div>
+                <ul>
+                    <li>Started - 2020</li>
+                    <li style="margin-top:5px;">Finished - 2021</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="4">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="meta.svg" width="300" alt="">
+                <div class="h">Front End Development</div>
+                <div class="p">
+                    In this course I got introduced to Web Development
+                    and the internet and how it works. I started learning HTML and
+                    CSS and by the end of the course I was able to create any type
+                    of static website.
+                </div>
+                <ul>
+                    <li>Started - 2022</li>
+                    <li style="margin-top:5px;">Finished - 2022</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="5">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="meta.svg" width="300" alt="">
+                <div class="h">Programming with JavaScript</div>
+                <div class="p">
+                    In the time of this course I learned JavaScript and how
+                    to implement it in order to build a fully functional
+                    web app. I also learned testing with JEST and got a taste
+                    of React. From here my Developer journey really started
+                    to kick in.
+                </div>
+                <ul>
+                    <li>Started - 2022</li>
+                    <li style="margin-top:5px;">Finished - 2023</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="6">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="meta.svg" width="300" alt="">
+                <div class="h">Version Control with Git</div>
+                <div class="p">
+                    In the time of this course I learned how to use Git
+                    and GitHub to manage any project I would have to work on,
+                    as well as how to use it for development with a team.
+                </div>
+                <ul>
+                    <li>Started - 2023</li>
+                    <li style="margin-top:5px;">Finished - 2023</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+<!--Skills Details-->
+        <!-- <div class="skillDescParent" value="1">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">HTML</div>
+                <div class="p">
+                    I first learned HTML on a course held by META
+                    where I learned the fundamentals of HTML and 
+                    the Internet and all of the protocols and 
+                    how they work. From there my interset in Web
+                    Development skyrocketed and I was keen on learning more.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="2">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">CSS</div>
+                <div class="p">
+                    I first started learning CSS together with HTML 
+                    and really liked how you can style any web page,
+                    so I really started to dig into the language more
+                    and learned so many things and cool tricks.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="3">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">JavaScript</div>
+                <div class="p">
+                    After I learned the fundamentals of HTML 
+                    and CSS I then took Meta's JavaScript course
+                    and learned how to use JS to implement functionallity
+                    into the webpage and from there I continued learning
+                    more from the Internet by myself.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="4">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">C++</div>
+                <div class="p">
+                    This was the very first programming language
+                    that I learned. I first got introduced to it in 
+                    8th grade elementary school in order to compete
+                    in the Informatics Competition held by "ZIM" and 
+                    from there my love for programming began to increase
+                    so I attended many certified courses and got to learn
+                    the language a lot more.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="5">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">Python</div>
+                <div class="p">
+                    This is the newest language to my inventory
+                    that I started learning in order to be able 
+                    to apply backend to my web apps, as well as 
+                    to potentially get into machine learning and 
+                    work on Artificial Intelligence.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="6">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">MySQL</div>
+                <div class="p">
+                    This is the first backend language I learned.
+                    I learned it in order to manage database systems
+                    and to be able to implement backend into my web apps.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="7">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">PHP</div>
+                <div class="p">
+                    After I learned MySQL i started learning PHP 
+                    so that I can manage forms, login systems 
+                    and connect the backend with the frontend of
+                    web apps. I really liked how functional this language
+                    is so I dug deep into it and learned as much as I could.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="8">
+            <div class="skillDescNoise">
+                <div class="skillDesc">
+                    <div class="h">Django</div>
+                    <div class="p">
+                        After I learned Python I had to learn the 
+                        Django framework to be able to use Python for 
+                        backend development. I was quite impressed of how easy
+                        it is to use it so I started implementing it more in 
+                        my web apps.
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

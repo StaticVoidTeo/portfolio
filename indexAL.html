@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="alb">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teo Kocev</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div class="header">
+        <img src="tk_logo.png" height="50" alt="Teo Kocev">
+        <div class="langAndMenu">
+            <div class="languages">
+                <img onclick="window.location='indexMK.html'" src="Flag_of_North_Macedonia.svg.jpg" alt="" height="25">
+                <img onclick="window.location='indexAL.html'" src="albanian.png" alt="" height="25">
+                <img onclick="window.location='index.html'" src="Flag_of_the_United_Kingdom_(1-2).svg.jpg" alt="" height="25">
+            </div>
+            <div class="menu">
+                <div id="n" class="menuItem" value="1">Rreth meje</div>
+                <div id="n" class="menuItem" value="2">Aftësitë</div>
+                <div id="n" class="menuItem" value="3">Arsimi</div>
+                <div id="n" class="menuItem" value="4">Përvoja</div>
+                <div id="n" class="menuItem" value="5">Kontaktoni</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div id="leftArrow" class="arrow">&#x2039;</div>
+        <div id="rightArrow" class="arrow">&#x203A;</div>
+<!--Section 1-->
+        <div class="section" id="mainSec" value="1">
+            <img src="pfp_final5.png" height="600" alt="Me" id="mePic">
+            <div class="whoAmI">
+                <div class="h">une jam nje <br><span id="developer" style="color:coral;">Developer</span></div>
+                <div class="p" style="max-width:500px;">
+                    Unë jam një Zhvillues Web Full Stack me 
+                    përvojë në zhvillimin e aplikacioneve Web 
+                    duke përdorur teknologji të nivelit të lartë si 
+                    HTML, CSS, JavaScript, Python, Django dhe më shumë!
+                </div>
+                <button id="contactBtn" class="button-86" role="button">Më hir!</button>
+                <div class="meInfo">
+                    <div class="infoDiv">
+                        <img src="birthday-cake.png" alt="" height="30">
+                        <div class="p">12 Aug. 2006</div>
+                    </div>
+                    <div class="infoDiv">
+                        <img src="macedonia_flag.png" alt="" width="30">
+                        <div class="p">Radovish, Macedonia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Section 2-->
+        <div class="section" id="skillsSec" value="2">
+            <div class="skillsDesc">
+                <div class="h" style="text-align:center;">Aftësitë</div>
+                <div class="p" style="max-width:500px;">
+                    Unë kam mësuar aftësitë e mëposhtme gjatë viteve të fundit nga kurset, projektet dhe <span class="glowP" style="color:rgb(255, 149, 110);">punët e pavarura</span>.<br>
+                </div>
+            </div>
+            <div class="skills">
+                <img title="HTML" src="html_logo.png" height="120" alt="html" value="1">
+
+                <img title="CSS"src="css_logo.png" height="120" alt="css" value="2">
+
+                <img title="JavaScript" src="JS.svg" height="120" alt="javascript" value="3">
+
+                <img title="C++" src="CPlusPlus.svg" height="120" alt="cplusplus" value="4">
+
+                <img title="Python" src="Python.svg" height="120" alt="python" value="5">
+
+                <img title="MySQL" src="Mysql_logo.png" width="120" alt="mysql" value="6">
+
+                <img title="PHP" src="PHP.svg" width="120" alt="php" value="7">
+
+                <img title="Django" src="django-icon.png" height="120" alt="django" value="8">
+            </div>
+        </div>
+<!--Section 3-->
+        <div class="section" id="educationSec" value="3">
+            <div class="educationDesc">
+                <div class="h" style="text-align:center;">Arsimi</div>
+                <div class="p">
+                    Këto janë <span class="glowP" style="color:coral;">certifikatat</span> që kam marrë:
+                </div>
+            </div>
+            <div class="education">
+                <div class="school1" value="1">
+                    <div class="school">
+                        <img src="semos.png" width="180" alt="">
+                        <div class="p">Programming with C++</div>
+                        <ul>
+                            <li>Filloi - 2019</li>
+                            <li style="margin-top:5px;">Përfunduar - 2020</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="2">
+                    <div class="school">
+                        <img src="semos.png" width="180" alt="">
+                        <div class="p">Advanced C++</div>
+                        <ul>
+                            <li>Filloi - 2020</li>
+                            <li style="margin-top:5px;">Përfunduar - 2020</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="3">
+                    <div class="school">
+                        <img src="semos.png" width="180" alt="">
+                        <div class="p">Programming with C#</div>
+                        <ul>
+                            <li>Filloi - 2020</li>
+                            <li style="margin-top:5px;">Përfunduar - 2021</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="4">
+                    <div class="school">
+                        <img src="meta3.png" width="180" alt="">
+                        <div class="p">Front End Development</div>
+                        <ul>
+                            <li>Filloi - 2022</li>
+                            <li style="margin-top:5px;">Përfunduar - 2022</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="5">
+                    <div class="school">
+                        <img src="meta3.png" width="180" alt="">
+                        <div class="p">Programming with<br>JavaScript</div>
+                        <ul>
+                            <li>Filloi - 2022</li>
+                            <li style="margin-top:5px;">Përfunduar - 2023</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="6">
+                    <div class="school">
+                        <img src="meta3.png" width="180" alt="">
+                        <div class="p">Version Control with Git</div>
+                        <ul>
+                            <li>Filloi - 2023</li>
+                            <li style="margin-top:5px;">Përfunduar - 2023</li>
+                        </ul>
+                    </div>
+                    <div class="ball"></div>
+                </div>
+            </div>
+        </div>
+<!--Section 4-->
+        <div class="section" id="expSec" value="4">
+            <div id="expDesc">
+                <div class="h" style="text-align:center;">Portofoli</div>
+                <div class="p" style="max-width:470px;">Këto janë disa nga <span class="glowP" style="color:coral;">projektet</span> 
+                e shumta që kam bërë në muajt e fundit</div>
+            </div>
+            <div class="projects">
+                <div class="project" id="randPhotos" onclick="window.location= 'https://demo.100jsprojects.com/random-photos'">
+                    <div><img src="pj2.jpg"></div>
+                    <h1>Foto të rastësishme</h1>
+                    <h3>Ky aplikacion ueb gjeneron
+                        foto të rastësishme</h3>
+                    <div class="langBar">
+                        <div class="bar">
+                            <div class="htmlBar"></div>
+                            <div class="cssBar"></div>
+                            <div class="jsBar"></div>
+                        </div>
+                        <div class="percanteges">
+                            <h4 style="display:flex;align-items:center;"> <span style="color:white;font-size:30px;">&#8226</span>‎ HTML</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:coral;font-size:30px;">&#8226</span>‎ CSS</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:yellow;font-size:30px;">&#8226</span>‎ JavaScript</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="calendar" onclick="window.location = 'https://demo.100jsprojects.com/month-calender'">
+                    <div><img src="pj3.jpg"></div>
+                    <h1>Projekti i kalendarit</h1>
+                    <h3>Ky është një kalendar
+                        plotësisht funksional</h3>
+                    <div class="langBar">
+                        <div class="bar">
+                            <div class="htmlBar"></div>
+                            <div class="cssBar"></div>
+                            <div class="jsBar"></div>
+                        </div>
+                        <div class="percanteges">
+                            <h4 style="display:flex;align-items:center;"> <span style="color:white;font-size:30px;">&#8226</span>‎ HTML</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:coral;font-size:30px;">&#8226</span>‎ CSS</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:yellow;font-size:30px;">&#8226</span>‎ JavaScript</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="imageSlider" onclick="window.location = 'https://demo.100jsprojects.com/rotating-image-gallery'">
+                    <div><img src="pj4.jpg"></div>
+                    <h1>Rrëshqitësi i imazhit</h1>
+                    <h3>Ky është një rrëshqitës imazhi</h3>
+                    <div class="langBar">
+                        <div class="bar">
+                            <div class="htmlBar"></div>
+                            <div class="cssBar"></div>
+                            <div class="jsBar"></div>
+                        </div>
+                        <div class="percanteges">
+                            <h4 style="display:flex;align-items:center;"> <span style="color:white;font-size:30px;">&#8226</span>‎ HTML</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:coral;font-size:30px;">&#8226</span>‎ CSS</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:yellow;font-size:30px;">&#8226</span>‎ JavaScript</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Section 5-->
+        <div class="section" id="contactSec" value="5">
+            <div class="form">
+                <form action="https://formspree.io/f/moqgpdzl" method="post">
+                    <h1>‎ Kontaktoni</h1>
+                    <label for="name">Plotësoni informacionin tuaj:</label>
+                    <input placeholder="Emri dhe mbiemri" type="text" id="name">
+                    <input placeholder="Email" type="email">
+                    <label id="textareaLabel" for="textarea">Çfarë shërbimi do të dëshironit?</label>
+                    <textarea placeholder="Shkruani një mesazh..." name="message" id="message" cols="30" rows="7"></textarea>
+                    <button class="button-86" id="submit" type="submit">Dërgo</button>
+                </form>
+            </div>
+            <div class="info">
+                <div class="h">Më arrini:</div>
+                <div id="linkedinDiv" onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'">
+                    <img src="linkedin_logo.png" id="linkedin" alt="linkedin" height="30">
+                </div>
+                <div class="p">Email: </div>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfsdKzhDnwXkrRnNsZRFdRKmrDpbxTPNnhtzNNZmZcQKfVDXvfQcWDLZmKhBkWMWcHThJV">kingteo692@gmail.com</a>
+            </div>
+        </div>
+<!--Certificates-->
+        <div class="parentCert" value="1">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="semos.png" width="300" alt="">
+                <div class="h">Programming with C++</div>
+                <div class="p">Në kohën e këtij kursi mësova bazat e gjuhës programuese C++, si dhe avancova të menduarit tim algoritmik në zgjidhjen e problemeve të vështira të kodimit. Këtu filloi dashuria ime për programimin.</div>
+                <ul>
+                    <li>Filloi - 2019</li>
+                    <li style="margin-top:5px;">Përfunduar - 2020</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="2">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="semos.png" width="300" alt="">
+                <div class="h">Advanced C++</div>
+                <div class="p">
+                    Në kohën e këtij kursi, unë i ngrita aftësitë e mia me gjuhën e programimit C++, dhe këtu munda të mësoja disa teknika që më përfshinë në garat e bazuara në Algortime dhe Strukturat e të Dhënave dhe që atëherë jam duke konkurruar.
+                </div>
+                <ul>
+                    <li>Filloi - 2020</li>
+                    <li style="margin-top:5px;">Përfunduar - 2020</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="3">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="semos.png" width="300" alt="">
+                <div class="h">Programming with C#</div>
+                <div class="p">
+                    Në kohën e këtij kursi u njoha me gjuhën e programimit C# dhe krijimin e aplikacioneve Windows. Mësova bazat dhe mënyrën e funksionimit në Visual Studio.
+                </div>
+                <ul>
+                    <li>Filloi - 2020</li>
+                    <li style="margin-top:5px;">Përfunduar - 2021</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="4">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="meta.svg" width="300" alt="">
+                <div class="h">Front End Development</div>
+                <div class="p">
+                    Në këtë kurs u njoha me Zhvillimin e Uebit dhe internetin dhe si funksionon. Fillova të mësoja HTML dhe CSS dhe në fund të kursit arrita të krijoj çdo lloj uebsajti statik.
+                </div>
+                <ul>
+                    <li>Filloi - 2022</li>
+                    <li style="margin-top:5px;">Përfunduar - 2022</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="5">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="meta.svg" width="300" alt="">
+                <div class="h">Programming with JavaScript</div>
+                <div class="p">
+                    Në kohën e këtij kursi mësova JavaScript dhe si ta zbatoj atë në mënyrë që të ndërtoj një aplikacion ueb plotësisht funksional. Mësova gjithashtu testimin me JEST dhe mora një shije të React. Nga këtu, udhëtimi im i Zhvilluesit filloi me të vërtetë.
+                </div>
+                <ul>
+                    <li>Filloi - 2022</li>
+                    <li style="margin-top:5px;">Përfunduar - 2023</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="6">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="meta.svg" width="300" alt="">
+                <div class="h">Version Control with Git</div>
+                <div class="p">
+                    Në kohën e këtij kursi mësova se si të përdor Git dhe GitHub për të menaxhuar çdo projekt me të cilin do të më duhej të punoja, si dhe si ta përdorja për zhvillim me një ekip.
+                </div>
+                <ul>
+                    <li>Filloi - 2023</li>
+                    <li style="margin-top:5px;">Përfunduar - 2023</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+<!--Skills Details-->
+        <div class="skillDescParent" value="1">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">HTML</div>
+                <div class="p">
+                    Fillimisht mësova HTML në një kurs të mbajtur nga META ku mësova bazat e HTML dhe internetit dhe të gjitha protokollet dhe mënyrën se si funksionojnë. Prej andej interseti im në Zhvillimin e Uebit u ngrit në qiell dhe unë isha i prirur të mësoja më shumë.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="2">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">CSS</div>
+                <div class="p">
+                    Fillimisht fillova të mësoja CSS së bashku me HTML dhe më pëlqeu shumë se si mund të stiloni çdo faqe interneti, kështu që me të vërtetë fillova të gërmoj më shumë në gjuhën dhe mësova kaq shumë gjëra dhe truke të bukura.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="3">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">JavaScript</div>
+                <div class="p">
+                    Pasi mësova bazat e HTML dhe CSS, më pas mora kursin e Meta-s JavaScript dhe mësova se si të përdor JS për të zbatuar funksionalitetin në faqen e internetit dhe prej andej vazhdova të mësoja më shumë nga Interneti vetë.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="4">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">C++</div>
+                <div class="p">
+                    Kjo ishte gjuha e parë e programimit që mësova. Fillimisht u njoha me të në shkollën fillore të 8-të për të konkurruar në Konkursin e Informatikës të mbajtur nga "ZIM" dhe prej andej filloi të më shtohej dashuria për programimin, kështu që ndoqa shumë kurse të certifikuara dhe mësova shumë më tepër gjuhën.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="5">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">Python</div>
+                <div class="p">
+                    Kjo është gjuha më e re në inventarin tim
+                    që fillova të mësoja për të qenë në gjendje
+                    për të aplikuar backend në aplikacionet e mia të uebit, si dhe
+                    për të hyrë potencialisht në mësimin e makinerive dhe
+                    punë për inteligjencën artificiale.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="6">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">MySQL</div>
+                <div class="p">
+                    Kjo është gjuha e parë mbështetëse që mësova.
+                    E mësova për të menaxhuar sistemet e bazës së të dhënave
+                    dhe të jem në gjendje të implementoj backend në aplikacionet e mia të uebit.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="7">
+            <div class="skillDescNoise">
+            <div class="skillDesc">
+                <div class="h">PHP</div>
+                <div class="p">
+                    Pasi mësova MySQL, fillova të mësoj PHP
+                    në mënyrë që të mund të menaxhoj format, sistemet e hyrjes
+                    dhe lidhni pjesën e pasme me pjesën e përparme të
+                    aplikacionet në ueb. Më pëlqeu shumë sa funksionale kjo gjuhë
+                    kështu që unë gërmova thellë në të dhe mësova sa më shumë që munda.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="skillDescParent" value="8">
+            <div class="skillDescNoise">
+                <div class="skillDesc">
+                    <div class="h">Django</div>
+                    <div class="p">
+                        Pasi mësova Python-in, më duhej të mësoja
+                        Korniza Django për të qenë në gjendje të përdorë Python
+                        zhvillimi i backend-it. Më bëri shumë përshtypje se sa e lehtë
+                        është për ta përdorur, kështu që fillova ta zbatoj më shumë në
+                        aplikacionet e mia në ueb.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

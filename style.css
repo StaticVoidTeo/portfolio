@@ -1086,7 +1086,7 @@ textarea:focus{
 }
 
 @media only screen and (max-width:755px){
-    .cursor-dor, .cursor-outline{
+    .cursor-dot, .cursor-outline{
         display:none;
     }
     body{

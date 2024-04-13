@@ -159,7 +159,7 @@ certificates.forEach((el) => {
 // })
 
 contactBtn.addEventListener("click", () => {
-    document.querySelector(".form").scrollIntoView({behavior:"smooth"});
+    document.querySelector("form").scrollIntoView({behavior:"smooth"});
 })
 
 menuItems.forEach((el) => {
@@ -171,6 +171,7 @@ menuItems.forEach((el) => {
         document.querySelector(".header img").style = "display:default;";
         xIcon.style = "display:none";
         val = el.getAttribute("value");
+        if(window.innerWidth > 755){
         if(val == 1){
             arrowLeft.style = "display:none;";
             arrowRight.style = "display:block;";
@@ -182,7 +183,7 @@ menuItems.forEach((el) => {
         else{
             arrowRight.style = "display:block;";
             arrowLeft.style = "display:block;";
-        }
+        }}
         prevSec.style = "display:none;";
         prevMenuItem.id = "";
         document.querySelector(`.menuItem[value="${val}"]`).id = "selectedMenuItem";
@@ -204,8 +205,9 @@ arrowLeft.addEventListener("click", () => {
     prevSec.style = "display:none;";
     prevMenuItem.id = "";
     val--;
-    if(val == 1)
-        arrowLeft.style = "display:none;";
+    if(window.innerWidth > 755)
+        if(val == 1)
+            arrowLeft.style = "display:none;";
     document.querySelector(`.menuItem[value="${val}"]`).id = "selectedMenuItem";
     prevMenuItem = document.querySelector(`.menuItem[value="${val}"]`);
     document.querySelector(`.section[value="${val}"`).style =
@@ -221,8 +223,9 @@ arrowRight.addEventListener("click", () => {
     prevSec.style = "display:none;";
     prevMenuItem.id = "";
     val++;
-    if(val == 4)
-        arrowRight.style = "display:none;";
+    if(window.innerWidth > 755)
+        if(val == 4)
+            arrowRight.style = "display:none;";
     document.querySelector(`.menuItem[value="${val}"]`).id = "selectedMenuItem";
     prevMenuItem = document.querySelector(`.menuItem[value="${val}"]`);
     document.querySelector(`.section[value="${val}"`).style =
@@ -258,6 +261,7 @@ window.addEventListener("wheel", function(event) {
     prevMenuItem.id = "";
     let inc = (event.deltaY > 0) ? 1 : -1;
     val = parseInt(val) + inc;
+    if(window.innerWidth > 755){
     if(val == 1){
         arrowLeft.style = "display:none;";
         arrowRight.style = "display:block;";
@@ -269,7 +273,7 @@ window.addEventListener("wheel", function(event) {
     else{
         arrowRight.style = "display:block;";
         arrowLeft.style = "display:block;";
-    }
+    }}
     document.querySelector(`.menuItem[value="${val}"]`).id = "selectedMenuItem";
     prevMenuItem = document.querySelector(`.menuItem[value="${val}"]`);
     document.querySelector(`.section[value="${val}"`).style =

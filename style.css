@@ -1063,7 +1063,7 @@ textarea:focus{
 }
 
 #mobile-header .menuItem{
-    font-size:16px;
+    font-size:24px;
 }
 
 /* responsive layout --------------------------------------------- */
@@ -1086,6 +1086,13 @@ textarea:focus{
 }
 
 @media only screen and (max-width:755px){
+    .cursor-dor, .cursor-outline{
+        display:none;
+    }
+    body{
+        cursor:default;
+    }
+    
     .menu{
         display:none;
     }

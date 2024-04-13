@@ -10,8 +10,8 @@
 <body>
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
-    <div class="header">
-        <img src="tk_logo.png" height="50" alt="Teo Kocev">
+    <div class="header" id="down">
+        <img src="tk_logo.png" id="headerLogo" height="50" alt="Teo Kocev">
         <div class="langAndMenu">
             <!-- <div class="languages">
                 <img onclick="window.location='indexMK.html'" src="Flag_of_North_Macedonia.svg.jpg" alt="" height="25">
@@ -23,6 +23,15 @@
                 <div id="n" class="menuItem" value="2">Skills</div>
                 <div id="n" class="menuItem" value="3">Education</div>
                 <div id="n" class="menuItem" value="4">Portfolio</div>
+            </div>
+            <div class="menuIcon">
+                <div class="menuLine" style="animation:menuPopUp1 .4s forwards;"></div>
+                <div class="menuLine" style="animation:menuPopUp2 .4s forwards;"></div>
+                <div class="menuLine" style="animation:menuPopUp3 .4s forwards;"></div>
+            </div>
+            <div class="xIcon">
+                <div class="xLine" id="x1"></div>
+                <div class="xLine" id="x2"></div>
             </div>
         </div>
     </div>
@@ -57,7 +66,6 @@
                         </div>
                     </div>
                 </div></div>
-            <div class="form">
                 <form action="https://formspree.io/f/moqgpdzl" method="post">
                     <h1>‎ Contact</h1>
                     <label for="name">Fill in your info:</label>
@@ -67,7 +75,6 @@
                     <textarea placeholder="Write a message..." name="message" id="message" cols="30" rows="7"></textarea>
                     <button class="button-86" id="submit" type="submit">Send</button>
                 </form>
-            </div>
             <div class="footerParent">
                 <div class="footer">
                     <img onclick="window.location='https://www.instagram.com/teo_kocev?igsh=Zjc2OXU5MzV1enRz'" src="insta_logo.png" alt="" height="30">

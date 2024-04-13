@@ -1,4 +1,4 @@
-let menuItems = document.querySelectorAll(".menuItem");
+let menuItems = document.querySelector(".header").querySelectorAll(".menuItem");
 let arrowLeft = document.querySelector("#leftArrow");
 let arrowRight = document.querySelector("#rightArrow");
 let contactBtn = document.querySelector("#contactBtn");
@@ -9,6 +9,8 @@ let certificates = document.querySelectorAll(".parentCert");
 let devH = document.querySelector("#developer");
 let cursorDot = document.querySelector("[data-cursor-dot]");
 let cursorOutline = document.querySelector("[data-cursor-outline]");
+let menuIcon = document.querySelector(".menuIcon");
+let xIcon = document.querySelector(".xIcon");
 
 let prevSec = document.querySelector(`.section[value='1']`);
 let prevMenuItem = document.querySelector(`.menuItem[value='1']`);
@@ -33,6 +35,32 @@ function topVisible(){
     }
     return false;
 }
+
+let prevScroll = 0;
+
+window.addEventListener("scroll", () => {
+    if(prevScroll < window.scrollY){
+        document.querySelector(".header").id = "up";
+    }
+    else{
+        document.querySelector(".header").id = "down";
+    }
+    prevScroll = window.scrollY;
+})
+
+menuIcon.addEventListener("click", () => {
+    document.querySelector(".header").id = "mobile-header";
+    document.querySelector(".header img").style = "display:none";
+    menuIcon.style = "display:none";
+    xIcon.style = "display:flex";
+})
+
+xIcon.addEventListener("click", () => {
+    document.querySelector(".header").id = "";
+    document.querySelector(".header img").style = "display:default;";
+    menuIcon.style = "display:flex";
+    xIcon.style = "display:none";
+})
 
 // window.addEventListener("wheel", () => {
 //     if(window.scrollY > 0){
@@ -136,6 +164,12 @@ contactBtn.addEventListener("click", () => {
 
 menuItems.forEach((el) => {
     el.addEventListener("click", () => {
+        if(window.innerWidth <= 755){
+            menuIcon.style = "display:flex";
+        }
+        document.querySelector(".header").id = "";
+        document.querySelector(".header img").style = "display:default;";
+        xIcon.style = "display:none";
         val = el.getAttribute("value");
         if(val == 1){
             arrowLeft.style = "display:none;";
@@ -202,10 +236,12 @@ arrowRight.addEventListener("click", () => {
 window.addEventListener("wheel", function(event) {
     if(dontScroll)
         return;
-    if(!bottomVisible() && event.deltaY > 0)  
+    if(!bottomVisible() && event.deltaY > 0){
         return;
-    if(!topVisible() && event.deltaY < 0)
+    }
+    if(!topVisible() && event.deltaY < 0){
         return;
+    }
     if(val == 4 && event.deltaY > 0){
         wheelCounter = 1;
         return;

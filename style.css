@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    font-family:Roboto, sans-serif;
+    font-family: "Exo 2", "sans-serif";
     color:white;
 }
 
@@ -150,8 +150,6 @@ a::after{
 /* other */
 
 .h{
-    /* font-family:Roboto, sans-serif; */
-    font-family: "M PLUS 1 Code", monospace;
     font-weight:700;
     font-size:50px;
     letter-spacing:2px;
@@ -164,11 +162,9 @@ a::after{
 .p{
     font-size:24px;
     letter-spacing:1px;
-    font-family:Merriweather, sans-serif;
 }
 
 #developer{
-    font-family:"M PLUS 1 Code", monospace;
     text-shadow:0 0 7px coral;
 }
 
@@ -221,7 +217,6 @@ a::after{
 
 .section{
     margin-top:190px;
-    /* animation:slideSec .4s; */
 }
 
 .slideFromLeft{
@@ -257,7 +252,6 @@ a::after{
 
 .overallSkill h1{
     margin:0;
-    font-family:"M PLUS 1 Code", monospace;
 }
 
 .overallSkill .p{
@@ -304,7 +298,6 @@ a::after{
 
 .skill .barInfo p{
     font-size:20px;
-    font-family:"M PLUS 1 Code", "monospace";
     letter-spacing:1px;
     margin:0;
 }
@@ -339,7 +332,6 @@ a::after{
     box-sizing:border-box;
     width:100%;
     height:100%;
-    /* background-image:url(noise-light.png); */
     background:linear-gradient(to top, transparent, rgba(255, 127, 80, 0.6));
     padding:30px;
     border:2px solid coral;
@@ -457,7 +449,6 @@ a::after{
   all: unset;
   width: 120px;
   height: 40px;
-  font-family:"M PLUS 1 Code", monospace;
   font-size: 24px;
   background: transparent;
   border: none;
@@ -539,16 +530,15 @@ form h1{
     color:black;
     -webkit-text-stroke: white 1px;
     letter-spacing:2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 label{
-    font-family:Merriweather, sans-serif;
     color:white;
     cursor:none;
 }
 
 input{
-    font-family:Merriweather, sans-serif;
     font-size:24px;
     border:none;
     padding:0 10px 10px 10px;
@@ -665,7 +655,6 @@ textarea:focus{
 .project::after{
     font-size:38px;
     display:none;
-    font-family:"M PLUS 1 Code", monospace;
     font-weight:500;
     transform:translateY(-10px);
     margin-top:-47px;
@@ -796,7 +785,6 @@ textarea:focus{
 .percanteges h4{
     margin:0;
     font-size:20px;
-    font-family:"M PLUS 1 Code", "monospace";
     letter-spacing:1px;
     margin-top:20px;
 }
@@ -902,40 +890,6 @@ textarea:focus{
     max-width:800px;
 }
 
-/* Skills Description */
-/* .skillDescParent{
-    min-width:100%;
-    min-height:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    display:none;
-    align-items:center;
-    justify-content:center;
-    background:rgba(0, 0, 0, 0.8);
-    z-index:9998;
-}
-
-.skillDescNoise{
-    position:absolute;
-    background:black;
-    background-image:url("noise-light.png");
-    animation:popUp .5s;
-}
-
-.skillDesc{
-    background:linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(255, 127, 80, 0.8));
-    padding:40px;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-    border-bottom:7px solid white;
-}
-
-.skillDesc .p{
-    max-width:800px;
-} */
-
 /* footer */
 
 .footerParent{
@@ -951,6 +905,7 @@ textarea:focus{
     box-sizing:border-box;
     display:flex;
     justify-content:center;
+    align-items:center;
     gap:20px;
     padding:20px 0 20px 0;
     width:100%;
@@ -1034,8 +989,13 @@ textarea:focus{
 /* mobile menu */
 
 @keyframes menuPopUp{
-    from {transform:translateY(-500px);}
+    from {transform:translateY(-700px);}
     to {transform:translateY(0);}
+}
+
+@keyframes menuSlideUp{
+    from {transform:translateY(0);}
+    to {transform:translateY(-700px);}
 }
 
 #mobile-header{
@@ -1051,19 +1011,33 @@ textarea:focus{
     animation:menuPopUp .7s forwards;
 }
 
-#mobile-header .langAndMenu{
+#mobile-header-slideup{
+    display:flex;
+    box-sizing:border-box;
+    height:100vh;
+    width:100vw;
+    background:#31363F;
+    position:fixed;
+    align-items:center;
+    justify-content:center;
+    z-index:9998;
+    animation:menuSlideUp .7s forwards;
+}
+
+#mobile-header .langAndMenu, #mobile-header-slideup .langAndMenu{
     flex-direction:column;
     gap:20px;
 }
 
-#mobile-header .menu{
+#mobile-header .menu, #mobile-header-slideup .menu{
     display:flex;
     flex-direction:column;
+    align-items:center;
     gap:10px;
 }
 
-#mobile-header .menuItem{
-    font-size:24px;
+#mobile-header .menuItem, #mobile-header-slideup .menuItem{
+    font-size:30px;
 }
 
 /* responsive layout --------------------------------------------- */

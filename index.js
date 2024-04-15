@@ -4,8 +4,6 @@ let arrowRight = document.querySelector("#rightArrow");
 let contactBtn = document.querySelector("#contactBtn");
 let schools = document.querySelectorAll(".school1");
 let certificates = document.querySelectorAll(".parentCert");
-// let skillDescs = document.querySelectorAll(".skillDescParent");
-// let skills = document.querySelectorAll(".skills img");
 let devH = document.querySelector("#developer");
 let cursorDot = document.querySelector("[data-cursor-dot]");
 let cursorOutline = document.querySelector("[data-cursor-outline]");
@@ -56,20 +54,14 @@ menuIcon.addEventListener("click", () => {
 })
 
 xIcon.addEventListener("click", () => {
-    document.querySelector(".header").id = "";
-    document.querySelector(".header img").style = "display:default;";
-    menuIcon.style = "display:flex";
-    xIcon.style = "display:none";
+    document.querySelector(".header").id = "mobile-header-slideup";
+    setTimeout(() => {
+        document.querySelector(".header img").style = "display:default;";
+        menuIcon.style = "display:flex";
+        xIcon.style = "display:none";
+        document.querySelector(".header").id = "down";
+    }, 701)
 })
-
-// window.addEventListener("wheel", () => {
-//     if(window.scrollY > 0){
-//         document.querySelector(".header").style = "background:black;";
-//     }
-//     else{
-//         document.querySelector(".header").style = "background:black;";
-//     }
-// })
 
 window.addEventListener("mousemove", (e) => {
     let posX = e.clientX;
@@ -77,8 +69,6 @@ window.addEventListener("mousemove", (e) => {
 
     cursorDot.style.top = `${posY}px`;
     cursorDot.style.left = `${posX}px`;
-    // cursorOutline.style.top = `${posY}px`;
-    // cursorOutline.style.left = `${posX}px`;
 
     cursorOutline.animate({
         left: `${posX}px`,
@@ -112,21 +102,6 @@ setInterval(() => {
     }
 }, 100)
 
-// skills.forEach((el) => {
-//     el.addEventListener("click", () => {
-//         let val = el.getAttribute("value");
-//         document.querySelector(`.skillDescParent[value='${val}']`).style = "display:flex;";
-//         dontScroll = true;
-//     })
-// })
-
-// skillDescs.forEach((el) => {
-//     el.addEventListener("click", () => {
-//         el.style = "display:none;";
-//         dontScroll = false;
-//     })
-// })
-
 schools.forEach((el) => {
     el.addEventListener("click", (element) => {
         let val = el.getAttribute("value");
@@ -142,22 +117,6 @@ certificates.forEach((el) => {
     })
 })
 
-// contactBtn.addEventListener("click", () => {
-//     val = 5;
-//     arrowRight.style = "display:none";
-//     arrowLeft.style = "display:block";
-//     prevSec.style = "display:none;";
-//     prevMenuItem.id = "";
-//     document.querySelector(`.menuItem[value="${val}"]`).id = "selectedMenuItem";
-//     prevMenuItem = document.querySelector(`.menuItem[value="${val}"]`);
-//     document.querySelector(`.section[value='${val}']`).style =
-//     "display:flex;";
-//     document.querySelector(`.section[value='${val}']`).className = "section slideFromRight";
-//     prevVal = val;
-//     prevSec = document.querySelector(`.section[value='${val}']`);
-//     wheelCounter = 1;
-// })
-
 contactBtn.addEventListener("click", () => {
     document.querySelector("form").scrollIntoView({behavior:"smooth"});
 })
@@ -165,11 +124,15 @@ contactBtn.addEventListener("click", () => {
 menuItems.forEach((el) => {
     el.addEventListener("click", () => {
         if(window.innerWidth <= 755){
-            menuIcon.style = "display:flex";
+            document.querySelector(".header").id = "mobile-header-slideup";
+            setTimeout(() => {
+                document.querySelector(".header img").style = "display:default;";
+                menuIcon.style = "display:flex";
+                xIcon.style = "display:none";
+                document.querySelector(".header").id = "down";
+            }, 701)
         }
-        document.querySelector(".header").id = "";
-        document.querySelector(".header img").style = "display:default;";
-        xIcon.style = "display:none";
+
         val = el.getAttribute("value");
         if(window.innerWidth > 755){
         if(val == 1){

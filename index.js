@@ -37,6 +37,8 @@ function topVisible(){
 let prevScroll = 0;
 
 window.addEventListener("scroll", () => {
+    if(document.querySelector(".header").id == "mobile-header")
+        return;
     if(prevScroll < window.scrollY){
         document.querySelector(".header").id = "up";
     }

@@ -344,13 +344,17 @@ a::after{
     margin-right:auto;
 }
 
-.school ul{
-    margin:0;
-    margin-top:20px;
-}
-
 .school .p{
     margin-top:30px;
+    margin-bottom:15px;
+}
+
+.school p, .certificate p{
+    margin:0;
+    background:#31363F;
+    width:fit-content;
+    padding:12px;
+    border-radius:30px;
 }
 
 @keyframes slideBall{
@@ -623,13 +627,14 @@ textarea:focus{
 
 .project{
     max-width:300px;
+    height:250px;
     padding:20px;
     background:#31363F;
     transition:all .4s ease-in-out;
 }
 
 .project img{
-    height:250px;
+    height:100%;
     width:100%;
     object-fit:cover;
     transition:all .4s ease-in-out;
@@ -653,11 +658,11 @@ textarea:focus{
 }
 
 .project::after{
-    font-size:38px;
+    font-size:30px;
     display:none;
     font-weight:500;
     transform:translateY(-10px);
-    margin-top:-47px;
+    margin-top:-36px;
     margin-left:10px;
     animation:coverShow .4s forwards;
 }
@@ -856,11 +861,12 @@ textarea:focus{
 }
 
 .certificate{
-    background:linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(255, 127, 80, 0.8));
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(255, 127, 80, 0.7));
     padding:40px;
     display:flex;
     flex-direction:column;
     gap:20px;
+    border:2px solid coral;
     border-bottom:7px solid white;
 }
 
@@ -882,8 +888,8 @@ textarea:focus{
     margin-bottom:20px;
 }
 
-.certificate li{
-    font-size:24px;
+.certificate p{
+    font-size:20px;
 }
 
 .certificate .p{
@@ -893,12 +899,7 @@ textarea:focus{
 /* footer */
 
 .footerParent{
-    box-sizing:border-box;
     width:100%;
-    border:4px solid #31363F;
-    border-top:0;
-    border-bottom:0;
-    padding-bottom:100px;
 }
 
 .footer{
@@ -907,7 +908,7 @@ textarea:focus{
     justify-content:center;
     align-items:center;
     gap:20px;
-    padding:20px 0 20px 0;
+    padding:20px 10px 20px 10px;
     width:100%;
     background:#31363F;
 }
@@ -1094,6 +1095,12 @@ textarea:focus{
     #headerLogo{
         height:35px;
     }
+    .footer img{
+        height:25px;
+    }
+    .footer p{
+        font-size:14px;
+    }
 
     /* content */
     .content{
@@ -1148,8 +1155,11 @@ textarea:focus{
     .education{
         grid-template-columns:repeat(1, auto);
     }
-    .school ul li, .certificate ul li{
-        font-size:16px;
+    .school .p{
+        font-size:20px;
+    }
+    .school p, .certificate p{
+        font-size:14px;
     }
     .certificate img{
         width:60%;
@@ -1158,7 +1168,7 @@ textarea:focus{
 
     /* Portfolio Section */
 
-    .project img{
+    .project{
         height:30vh;
     }
     .project:hover.project .imageCover{

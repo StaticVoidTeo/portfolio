@@ -335,7 +335,12 @@ a::after{
     background:linear-gradient(to top, transparent, rgba(255, 127, 80, 0.6));
     padding:30px;
     border:2px solid coral;
-    border-bottom:5px solid white;
+    border-bottom:5px solid coral;
+    transition:all .4s ease-in-out;
+}
+
+.school:hover{
+    border-color:white;
 }
 
 .school img{
@@ -344,9 +349,14 @@ a::after{
     margin-right:auto;
 }
 
+.medal{
+    margin-bottom:-20px;
+}
+
 .school .p{
     margin-top:30px;
     margin-bottom:15px;
+    max-width:300px;
 }
 
 .school p, .certificate p{
@@ -367,7 +377,7 @@ a::after{
     to{transform:translateX(0)}
 }
 
-.school1:hover .ball{
+/* .school1:hover .ball{
     background-color:white;
     margin-left:auto;
     margin-right:auto;
@@ -384,7 +394,7 @@ a::after{
     margin-right:-20px;
     animation:slideBallRight .2s;
     transition:all .4s ease-in-out;
-}
+} */
 
 /* Section 1 */
 
@@ -515,6 +525,24 @@ a::after{
   transform: translate(0, 5%);
 }
 
+/* button-mine */
+
+.button-mine{
+    color:coral;
+    padding:10px 40px 10px 40px;
+    border:2px solid coral;
+    background:none;
+    cursor:none;
+    font-size:24px;
+    max-width:fit-content;
+    transition:all .4s linear;
+}
+
+.button-mine:hover{
+    background:coral;
+    color:black;
+}
+
 /* section Contact */
 
 form{
@@ -530,11 +558,11 @@ form{
 
 form h1{
     margin:0;
-    margin-top:-54px;
+    margin-top:-60px;
     color:black;
     -webkit-text-stroke: white 1px;
     letter-spacing:2px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 label{
@@ -599,7 +627,6 @@ textarea:focus{
     min-width:60%;
     margin-left:auto;
     margin-right:auto;
-    padding:5px 0 5px 0;
     margin-bottom:10px;
 }
 
@@ -684,16 +711,28 @@ textarea:focus{
     display:block;
 }
 
-#randPhotos::after{
-    content:"Random Photos";
+#evroprint::after{
+    content:"EvroPrint";
 }
 
-#calendar::after{
-    content:"Calendar";
+#portfolioPj::after{
+    content:"Teo Kocev";
 }
 
-#imageSlider::after{
-    content:"Image Slider";
+#uprize::after{
+    content:"Uprize";
+}
+
+#typeSpeed::after{
+    content:"Type Speed";
+}
+
+#rps::after{
+    content:"R.P.S.";
+}
+
+#diceRoller::after{
+    content:"Dice Roller";
 }
 
 #expDesc{
@@ -796,40 +835,76 @@ textarea:focus{
 
 /* percanteges */
 
-#randPhotos1 .htmlBar{
-    width:30%;
+#evroprint1 .htmlBar{
+    width:34%;
+}   
+
+#evroprint1 .cssBar{
+    width:58%;
 }
 
-#randPhotos1 .cssBar{
-    width:46%;
+#evroprint1 .jsBar{
+    width:8%;
 }
 
-#randPhotos1 .jsBar{
+#portfolioPj1 .htmlBar{
+    width:69%;
+}
+
+#portfolioPj1 .cssBar{
+    width:19%;
+}
+
+#portfolioPj1 .jsBar{
+    width:10%;
+}
+
+#uprize1 .htmlBar{
+    width:45%;
+}
+
+#uprize1 .cssBar{
+    width:45%;
+}
+
+#uprize1 .jsBar{
+    width:10%;
+}
+
+#typeSpeed1 .htmlBar{
     width:24%;
 }
 
-#calendar1 .htmlBar{
-    width:20%;
+#typeSpeed1 .cssBar{
+    width:39%;
 }
 
-#calendar1 .cssBar{
+#typeSpeed1 .jsBar{
+    width:37%;
+}
+
+#rps1 .htmlBar{
+    width:21%;
+}
+
+#rps1 .cssBar{
+    width:24%;
+}
+
+#rps1 .jsBar{
     width:55%;
 }
 
-#calendar1 .jsBar{
-    width:25%;
+#diceRoller1 .htmlBar{
+    width:19%;
 }
 
-#imageSlider1 .htmlBar{
-    width:32%;
+#diceRoller1 .cssBar{
+    width:44%;
 }
 
-#imageSlider1 .cssBar{
-    width:47%;
-}
-
-#imageSlider1 .jsBar{
-    width:21%;
+#diceRoller1 .jsBar{
+    width:37%;
 }
 
 /* end percanteges */
@@ -866,11 +941,11 @@ textarea:focus{
     display:flex;
     flex-direction:column;
     gap:20px;
-    border:2px solid coral;
+    border:2px solid white;
     border-bottom:7px solid white;
 }
 
-.certificate::after{
+/* .certificate::after{
     content:"";
     display:block;
     height:60px;
@@ -880,7 +955,7 @@ textarea:focus{
     background:white;
     border-radius:100%;
     margin-bottom:-73px;
-}
+} */
 
 .certificate img{
     margin-left:auto;
@@ -892,7 +967,7 @@ textarea:focus{
     font-size:20px;
 }
 
-.certificate .p{
+.certificate .p, .certificate .h{
     max-width:800px;
 }
 
@@ -1133,7 +1208,7 @@ textarea:focus{
     label, input, textarea{
         font-size:16px;
     }
-    .button-86{
+    .button-86, .button-mine{
         font-size:24px;
         margin-left:auto;
         margin-right:auto;

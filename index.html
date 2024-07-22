@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teo Kocev</title>
+    <meta name="description" content="Teo Kocev Portfolio">
+    <title>Teo Kocev | Portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
@@ -44,17 +45,17 @@
                 <div class="whoAmI">
                     <div class="h">I am a <span id="developer" style="color:coral;">Developer</span></div>
                     <div class="p" style="opacity:0.9;max-width:500px;">
-                        I am a Full Stack Web Developer 
+                        I am a Web Developer 
                         with experience in developing 
                         Web applications using high end 
                         technologies like HTML, CSS, 
-                        JavaScript, Python, Django and more!
+                        JavaScript, React and more!
                     </div>
-                    <button id="contactBtn" class="button-86" role="button">Hire Me!</button>
+                    <button id="contactBtn" class="button-mine" role="button">Hire Me!</button>
                     <div class="meInfo">
                         <div class="infoDiv">
                             <img src="birthday-cake.png" alt="" height="30">
-                            <div class="p">12 Aug. 2006</div>
+                            <div class="p">2006</div>
                         </div>
                         <div class="infoDiv">
                             <img src="macedonia_flag.png" alt="" width="30">
@@ -66,14 +67,14 @@
                         </div>
                     </div>
                 </div></div>
-                <form action="https://formspree.io/f/moqgpdzl" method="post">
+                <form action="https://formspree.io/f/xdoqypyp" method="post">
                     <h1>‎ Contact</h1>
                     <label for="name">Fill in your info:</label>
-                    <input placeholder="Name & Surname" type="text" id="name">
-                    <input placeholder="Email" type="email">
-                    <label id="textareaLabel" for="textarea">What service would you want?</label>
+                    <input placeholder="Name & Surname" name="name" type="text" id="name">
+                    <input placeholder="Email" type="email" name="email">
+                    <label id="textareaLabel" for="textarea">What can I do for you?</label>
                     <textarea placeholder="Write a message..." name="message" id="message" cols="30" rows="7"></textarea>
-                    <button class="button-86" id="submit" type="submit">Send</button>
+                    <button class="button-mine" id="submit" type="submit">Send</button>
                 </form>
             <div class="footerParent">
                 <div class="footer">
@@ -99,14 +100,13 @@
                     </div>
                 </div>
                 <div class="overallSkill">
-                    <h1>Database Managment</h1>
+                    <h1>Web Design</h1>
                     <div class="p" style="opacity:0.8;">
-                        When I was learning backend development 
-                        I was fascinated how usefull it can be 
-                        to be able to store all of the data that
-                        is submited thru the front-end and send it
-                        to a database. I found managing databases quite
-                        interesting so I was keen on learning more.
+                        Learning to design the web pages that I create
+                        was one of my main goals when I was studying programming.
+                        A website without a good design is like local store where
+                        no one goes to buy. It's crucial. And learning about it was
+                        one of the most interesting parts of my journey.
                     </div>
                 </div>
             </div>
@@ -142,7 +142,17 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <img title="C++" src="CPlusPlus.svg" height="120" alt="cplusplus" value="4">
+                    <img title="React" src="react_logo-512.png" height="120" alt="react.js" value="4">
+                    <div class="skillBar">
+                        <div class="skillBarLoaded" style="width:90%;"></div>
+                    </div>
+                    <div class="barInfo">
+                        <p>React</p>
+                        <p>90%</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img title="C++" src="CPlusPlus.svg" height="120" alt="cplusplus" value="5">
                     <div class="skillBar">
                         <div class="skillBarLoaded" style="width:90%;"></div>
                     </div>
@@ -152,7 +162,7 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <img title="Python" src="Python.svg" height="120" alt="python" value="5">
+                    <img title="Python" src="Python.svg" height="120" alt="python" value="6">
                     <div class="skillBar">
                         <div class="skillBarLoaded" style="width:80%;"></div>
                     </div>
@@ -162,7 +172,7 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <img title="MySQL" src="Mysql_logo.png" width="120" alt="mysql" value="6">
+                    <img title="MySQL" src="Mysql_logo.png" width="120" alt="mysql" value="7">
                     <div class="skillBar">
                         <div class="skillBarLoaded" style="width:100%;border-radius:5px;"></div>
                     </div>
@@ -172,7 +182,7 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <img title="PHP" src="PHP.svg" width="120" alt="php" value="7">
+                    <img title="PHP" src="PHP.svg" width="120" alt="php" value="8">
                     <div class="skillBar">
                         <div class="skillBarLoaded" style="width:90%;"></div>
                     </div>
@@ -182,7 +192,7 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <img title="Django" src="django-icon.png" height="120" alt="django" value="8">
+                    <img title="Django" src="django-icon.png" height="120" alt="django" value="9">
                     <div class="skillBar">
                         <div class="skillBarLoaded" style="width:75%;"></div>
                     </div>
@@ -203,59 +213,71 @@
 <!--Section 3-->
         <div class="section" id="educationSec" value="3">
             <div class="educationDesc">
-                <div class="h" style="text-align:center;">Education</div>
-                <div class="p">
-                    These are the <span class="glowP" style="color:coral;">certificates</span> I have acquired:
-                </div>
+                <div class="h" style="text-align:center;">Achievments & Education</div>
             </div>
             <div class="education">
                 <div class="school1" value="1">
+                    <div class="school">
+                        <img src="medal.png" width="60" alt="" class="medal">
+                        <div class="p">Elected Student of the Year</div>
+                        <p>2021/2022</p>
+                    </div>
+                </div>
+                <div class="school1" value="2">
                     <div class="school">
                         <img src="semos.png" width="180" alt="">
                         <div class="p">Programming with C++</div>
                         <p>Oct. 2019 - Jan. 2020</p>
                     </div>
-                    <div class="ball"></div>
                 </div>
-                <div class="school1" value="2">
+                <div class="school1" value="3">
                     <div class="school">
                         <img src="semos.png" width="180" alt="">
                         <div class="p">Advanced C++</div>
                         <p>Feb. 2020 - Apr. 2020</p>
                     </div>
-                    <div class="ball"></div>
                 </div>
-                <div class="school1" value="3">
+                <div class="school1" value="4">
                     <div class="school">
                         <img src="semos.png" width="180" alt="">
                         <div class="p">Programming with C#</div>
                         <p>Oct. 2020 - Jan. 2021</p>
                     </div>
-                    <div class="ball"></div>
                 </div>
-                <div class="school1" value="4">
+                <div class="school1" value="5">
                     <div class="school">
                         <img src="meta3.png" width="180" alt="">
                         <div class="p">Front End Development</div>
                         <p>Sep. 2022 - Nov. 2022</p>
                     </div>
-                    <div class="ball"></div>
                 </div>
-                <div class="school1" value="5">
+                <div class="school1" value="6">
                     <div class="school">
                         <img src="meta3.png" width="180" alt="">
                         <div class="p">Programming with<br>JavaScript</div>
                         <p>Nov. 2022 - Feb. 2023</p>
                     </div>
-                    <div class="ball"></div>
                 </div>
-                <div class="school1" value="6">
+                <div class="school1" value="7">
                     <div class="school">
                         <img src="meta3.png" width="180" alt="">
                         <div class="p">Version Control with Git</div>
                         <p>Mar. 2023 - Apr. 2023</p>
                     </div>
-                    <div class="ball"></div>
+                </div>
+                <div class="school1" value="8">
+                    <div class="school">
+                        <img src="FreeCodeCamp_logo.svg.png" width="180" alt="">
+                        <div class="p">Legacy JavaScript Algorithms and Data Structures</div>
+                        <p>Jan. 2024 - May. 2024</p>
+                    </div>
+                </div>
+                <div class="school1" value="9">
+                    <div class="school">
+                        <img src="FreeCodeCamp_logo.svg.png" width="180" alt="">
+                        <div class="p">Responsive Web Design</div>
+                        <p>Jan. 2024 - Mar. 2024</p>
+                    </div>
                 </div>
             </div>
             <div class="footerParent">
@@ -272,18 +294,18 @@
                 <div class="h" style="text-align:center;">Portfolio</div>
             </div>
             <div class="projects">
-                <div class="project" id="randPhotos" onclick="window.location= 'https://demo.100jsprojects.com/random-photos'">
+                <div class="project" id="evroprint" onclick="window.location= 'https://staticvoidteo.github.io/evroprint'">
                     <div class="imageCover"></div>
-                    <img src="pj2.jpg">
+                    <img src="pj5.png">
                 </div>
-                <div class="projectSide" id="randPhotos1">
+                <div class="projectSide" id="evroprint1">
                     <div class="projectDesc">
                         <div class="bulletPoint">
                             <div class="bulletPointCenter"></div>
                         </div>
                         <div class="p">
-                            This is a web application that generates random photos. 
-                            It was made using HTML, CSS and JavaScript.
+                            This is a web website that I made for a company
+                            named EvroPrint. It was made using HTML, CSS and JS.
                         </div>
                     </div>
                     <div class="langBar">
@@ -299,18 +321,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="project" id="calendar" onclick="window.location = 'https://demo.100jsprojects.com/month-calender'">
+                <div class="project" id="portfolioPj" onclick="window.location= 'index.html'">
                     <div class="imageCover"></div>
-                    <img src="pj3.jpg">
+                    <img src="pj6.png">
                 </div>
-                <div class="projectSide" id="calendar1">
+                <div class="projectSide" id="portfolioPj1">
                     <div class="projectDesc">
                         <div class="bulletPoint">
                             <div class="bulletPointCenter"></div>
                         </div>
                         <div class="p">
-                            This is a simple web application that displays the current
-                            date. It was made with HTML, CSS and JavaScript. 
+                            This is the website you are currently looking at.
+                            It was made using HTML, CSS and JS.
                         </div>
                     </div>
                     <div class="langBar">
@@ -326,19 +348,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="project" id="imageSlider" onclick="window.location = 'https://demo.100jsprojects.com/rotating-image-gallery'">
+                <div class="project" id="uprize" onclick="window.location= 'https://staticvoidteo.github.io/uprize/'">
                     <div class="imageCover"></div>
-                    <img src="pj4.jpg">
+                    <img src="pj3.png">
                 </div>
-                <div class="projectSide" id="imageSlider1">
+                <div class="projectSide" id="uprize1">
                     <div class="projectDesc">
                         <div class="bulletPoint">
                             <div class="bulletPointCenter"></div>
                         </div>
                         <div class="p">
-                            This is a web application that has several photos
-                            and slides through them. It was made with HTML, CSS and
-                            JavaSctipt.
+                            This is a website I made for freelancing purposes.
+                            It was made using HTML, CSS and JS.
                         </div>
                     </div>
                     <div class="langBar">
@@ -354,6 +375,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="footerParent">
                 <div class="footer">
@@ -369,31 +391,17 @@
 </div> -->
 
 <!--Certificates-->
-        <div class="parentCert" value="1">
-            <div class="certNoise">
-            <div class="certificate">
-                <img src="semos.png" width="300" alt="">
-                <div class="h">Programming with C++</div>
-                <div class="p">In the time of this course I learned the fundamentals
-                of the programming language C++, as well as I advanced my algorithmic
-                thinking on solving difficult coding problems. This is where my love
-                for programming began.</div>
-                <p>Oct. 2019 - Jan. 2020</p>
-            </div>
-        </div>
-        </div>
         <div class="parentCert" value="2">
             <div class="certNoise">
             <div class="certificate">
                 <img src="semos.png" width="300" alt="">
-                <div class="h">Advanced C++</div>
+                <div class="h">Programming with C++</div>
                 <div class="p">
-                In the time of this course I upped my skills wtih with the programming
-                language C++, and here I was able to learn some techniques
-                that got me involved into competing in Algortihms and Data
-                Structures based competitions and I've been competing ever since.
+                    In the time of this course, I learned the fundamentals of the programming language
+                    C++, as well as I advanced my algorithmic thinking on solving difficult coding
+                    problems. This is where my love for programming began.
                 </div>
-                <p>Feb. 2020 - Apr. 2020</p>
+                <p>Oct. 2019 - Jan. 2020</p>
             </div>
         </div>
         </div>
@@ -401,58 +409,93 @@
             <div class="certNoise">
             <div class="certificate">
                 <img src="semos.png" width="300" alt="">
-                <div class="h">Programming with C#</div>
+                <div class="h">Advanced C++</div>
                 <div class="p">
-                    In the time of this course I got introduced to the
-                    programming language C# and the creation of Windows apps.
-                    I learned the fundamentals and how to operate in Visual Studio.
+                    In the time of this course, I upped my skills with the programming language C++,
+                    and here I was able to learn some techniques that got me involved in competing in
+                    Algorithms and Data Structures competitions and I've been competing ever since.
                 </div>
-                <p>Oct. 2020 - Jan. 2021</p>
+                <p>Feb. 2020 - Apr. 2020</p>
             </div>
         </div>
         </div>
         <div class="parentCert" value="4">
             <div class="certNoise">
             <div class="certificate">
-                <img src="meta.svg" width="300" alt="">
-                <div class="h">Front End Development</div>
+                <img src="semos.png" width="300" alt="">
+                <div class="h">Programming with C#</div>
                 <div class="p">
-                    In this course I got introduced to Web Development
-                    and the internet and how it works. I started learning HTML and
-                    CSS and by the end of the course I was able to create any type
-                    of static website.
+                    In the time of this course, I was introduced to the programming language C# and
+                    the creation of Windows apps. I learned the fundamentals and how to operate in
+                    Visual Studio.
                 </div>
-                <p>Sep. 2022 - Nov. 2022</p>
+                <p>Oct. 2020 - Jan. 2021</p>
             </div>
         </div>
         </div>
         <div class="parentCert" value="5">
             <div class="certNoise">
             <div class="certificate">
-                <img src="meta.svg" width="300" alt="">
-                <div class="h">Programming with JavaScript</div>
+                <img src="meta3.png" width="300" alt="">
+                <div class="h">Front End Development</div>
                 <div class="p">
-                    In the time of this course I learned JavaScript and how
-                    to implement it in order to build a fully functional
-                    web app. I also learned testing with JEST and got a taste
-                    of React. From here my Developer journey really started
-                    to kick in.
+                    In this course I got introduced to Web Development and the internet and how it
+                    works. I started learning HTML and CSS and by the end of the course, I was able to
+                    create any type of static website.
                 </div>
-                <p>Nov. 2022 - Feb. 2023</p>
+                <p>Sep. 2022 - Nov. 2022</p>
             </div>
         </div>
         </div>
         <div class="parentCert" value="6">
             <div class="certNoise">
             <div class="certificate">
-                <img src="meta.svg" width="300" alt="">
+                <img src="meta3.png" width="300" alt="">
+                <div class="h">Programming with JavaScript</div>
+                <div class="p">
+                    In the time of this course, I learned JavaScript and how to implement it to build a
+                    fully functional web app. I also learned testing with JEST and got a taste of React.
+                    From here my Developer journey started to kick in.
+                </div>
+                <p>Nov. 2022 - Feb. 2023</p>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="7">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="meta3.png" width="300" alt="">
                 <div class="h">Version Control with Git</div>
                 <div class="p">
-                    In the time of this course I learned how to use Git
-                    and GitHub to manage any project I would have to work on,
-                    as well as how to use it for development with a team.
+                    In the time of this course, I learned how to use Git and GitHub to manage any
+                    project I would have to work on, as well as how to use it for development with a
+                    team.
                 </div>
                 <p>Mar. 2023 - Apr. 2023</p>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="8">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="FreeCodeCamp_logo.svg.png" width="300" alt="">
+                <div class="h">Legacy JavaScript Algorithms and Data Structures</div>
+                <div class="p">
+                    With this course I upped my knowledge on solving problems using algorithms and data structures and really got comfortable using JavaScript.
+                </div>
+                <p>Jan. 2024 - May. 2024</p>
+            </div>
+        </div>
+        </div>
+        <div class="parentCert" value="9">
+            <div class="certNoise">
+            <div class="certificate">
+                <img src="FreeCodeCamp_logo.svg.png" width="300" alt="">
+                <div class="h">Responsive Web Desing</div>
+                <div class="p">
+                    In the time of this course I got really comfortable using HTML, but mainly CSS as I learned some tricks for better responsive display.
+                </div>
+                <p>Jan. 2024 - Mar. 2024</p>
             </div>
         </div>
         </div>

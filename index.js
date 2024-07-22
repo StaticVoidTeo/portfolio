@@ -99,6 +99,14 @@ setInterval(() => {
         }
         else{
             eraseDev = false;
+            // if(devOrCop){
+            //     dev = "Copywriter";
+            //     devOrCop = !devOrCop;
+            // }
+            // else{
+            //     dev = "Developer";
+            //     devOrCop = !devOrCop;
+            // }
         }
         devH.innerHTML = currentDev + "_";
     }

@@ -2,8 +2,6 @@ let menuItems = document.querySelector(".header").querySelectorAll(".menuItem");
 let arrowLeft = document.querySelector("#leftArrow");
 let arrowRight = document.querySelector("#rightArrow");
 let contactBtn = document.querySelector("#contactBtn");
-let schools = document.querySelectorAll(".school1");
-let certificates = document.querySelectorAll(".parentCert");
 let devH = document.querySelector("#developer");
 let cursorDot = document.querySelector("[data-cursor-dot]");
 let cursorOutline = document.querySelector("[data-cursor-outline]");
@@ -99,36 +97,28 @@ setInterval(() => {
         }
         else{
             eraseDev = false;
-            // if(devOrCop){
-            //     dev = "Copywriter";
-            //     devOrCop = !devOrCop;
-            // }
-            // else{
-            //     dev = "Developer";
-            //     devOrCop = !devOrCop;
-            // }
         }
         devH.innerHTML = currentDev + "_";
     }
 }, 100)
 
-schools.forEach((el) => {
-    el.addEventListener("click", (element) => {
-        let val = el.getAttribute("value");
-        document.querySelector(`.parentCert[value='${val}']`).style = "display:flex;";
-        dontScroll = true;
-    })
-})
-
-certificates.forEach((el) => {
-    el.addEventListener("click", () => {
-        el.style = "display:none;";
-        dontScroll = false;
-    })
-})
-
 contactBtn.addEventListener("click", () => {
-    document.querySelector("form").scrollIntoView({behavior:"smooth"});
+    arrowLeft.style = "display:block;";
+    arrowRight.style = "display:none;";
+    prevSec.style = "display:none;";
+    prevMenuItem.id = "";
+    val = 4;
+    if(window.innerWidth > 755)
+        if(val == 1)
+            arrowLeft.style = "display:none;";
+    document.querySelector(`.menuItem[value="4"]`).id = "selectedMenuItem";
+    prevMenuItem = document.querySelector(`.menuItem[value="4"]`);
+    document.querySelector(`.section[value="4"`).style =
+    "display:flex;";
+    document.querySelector(`.section[value="4"`).className = "section slideFromRight";
+    prevVal = val;
+    prevSec = document.querySelector(`.section[value='4']`);
+    wheelCounter = 1;
 })
 
 menuItems.forEach((el) => {

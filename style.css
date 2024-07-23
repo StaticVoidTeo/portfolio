@@ -307,59 +307,48 @@ a::after{
 #educationSec{
     display:none;
     flex-direction:column;
+    align-items:center;
     gap:50px;
 }
 
-.educationDesc{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
 .education{
-    display:grid;
-    grid-template-columns:auto auto;
-    gap:40px;
-}
-
-.school1{
+    box-sizing: border-box;
     display:flex;
     flex-direction:column;
-    align-items:end;
+    width:100%;
+    max-width:600px;
+    gap:30px;
 }
 
 .school{
     box-sizing:border-box;
     width:100%;
-    height:100%;
-    background:linear-gradient(to top, transparent, rgba(255, 127, 80, 0.6));
-    padding:30px;
-    border:2px solid coral;
-    border-bottom:5px solid coral;
-    transition:all .4s ease-in-out;
-}
-
-.school:hover{
-    border-color:white;
-}
-
-.school img{
     display:flex;
-    margin-left:auto;
-    margin-right:auto;
+    flex-direction:column;
+    gap:20px;
+    border-bottom:2px solid rgb(255, 149, 110);;
+    padding-bottom:30px;
 }
 
-.medal{
-    margin-bottom:-20px;
+.titleAndDate{
+    display:flex;
+    justify-content:space-between;
+    align-items:start;
+    gap:10px;
+}
+
+.edDesc{
+    font-size:24px;
 }
 
 .school .p{
-    margin-top:30px;
-    margin-bottom:15px;
-    max-width:300px;
+    font-size:30px;
+    font-weight:bold;
+    max-width:60%;
 }
 
-.school p, .certificate p{
+.school p{
+    text-wrap:nowrap;
     margin:0;
     background:#31363F;
     width:fit-content;
@@ -376,25 +365,6 @@ a::after{
     from{transform:translateX(-300%)}
     to{transform:translateX(0)}
 }
-
-/* .school1:hover .ball{
-    background-color:white;
-    margin-left:auto;
-    margin-right:auto;
-    animation:slideBall .2s;
-}
-
-.ball{
-    width:40px;
-    height:40px;
-    background:#ffffff3a;
-    backdrop-filter:blur(5px);
-    border-radius:100%;
-    margin-top:-20px;
-    margin-right:-20px;
-    animation:slideBallRight .2s;
-    transition:all .4s ease-in-out;
-} */
 
 /* Section 1 */
 
@@ -915,62 +885,6 @@ textarea:focus{
     to {transform:scale(1);}
 }
 
-.parentCert{
-    display:none;
-    position:fixed;
-    top:0;
-    left:0;
-    min-width:100%;
-    min-height:100%;
-    align-items:center;
-    justify-content:center;
-    background:rgba(0, 0, 0, 0.8);
-    z-index:9998;
-}
-
-.certNoise{
-    position:absolute;
-    background:black;
-    background-image:url("noise-light.png");
-    animation:popUp .5s;
-}
-
-.certificate{
-    background:linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(255, 127, 80, 0.7));
-    padding:40px;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-    border:2px solid white;
-    border-bottom:7px solid white;
-}
-
-/* .certificate::after{
-    content:"";
-    display:block;
-    height:60px;
-    width:60px;
-    margin-left:auto;
-    margin-right:auto;
-    background:white;
-    border-radius:100%;
-    margin-bottom:-73px;
-} */
-
-.certificate img{
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:20px;
-}
-
-.certificate p{
-    font-size:20px;
-}
-
-.certificate .p, .certificate .h{
-    max-width:800px;
-}
-
 /* footer */
 
 .footerParent{
@@ -1233,6 +1147,9 @@ textarea:focus{
     .school .p{
         font-size:20px;
     }
+    .edDesc{
+        font-size:16px;
+    }
     .school p, .certificate p{
         font-size:14px;
     }
@@ -1254,5 +1171,12 @@ textarea:focus{
         display:block;
         text-shadow:0 0 10px black;
         margin-top:-30px !important;
+    }
+}
+
+@media only screen and (max-width:380px){
+    .titleAndDate{
+        flex-direction:column;
+        gap:20px;
     }
 }

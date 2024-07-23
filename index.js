@@ -103,14 +103,12 @@ setInterval(() => {
 }, 100)
 
 contactBtn.addEventListener("click", () => {
-    arrowLeft.style = "display:block;";
     arrowRight.style = "display:none;";
     prevSec.style = "display:none;";
     prevMenuItem.id = "";
     val = 4;
     if(window.innerWidth > 755)
-        if(val == 1)
-            arrowLeft.style = "display:none;";
+        arrowLeft.style = "display:block;";
     document.querySelector(`.menuItem[value="4"]`).id = "selectedMenuItem";
     prevMenuItem = document.querySelector(`.menuItem[value="4"]`);
     document.querySelector(`.section[value="4"`).style =

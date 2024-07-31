@@ -681,6 +681,10 @@ textarea:focus{
     display:block;
 }
 
+#twitter::after{
+    content:"Twitter Clone";
+}
+
 #evroprint::after{
     content:"EvroPrint";
 }
@@ -815,6 +819,18 @@ textarea:focus{
 
 #evroprint1 .jsBar{
     width:8%;
+}
+
+#twitter1 .htmlBar{
+    width:5%;
+}
+
+#twitter1 .cssBar{
+    width:5%;
+}
+
+#twitter1 .jsBar{
+    width:95%;
 }
 
 #portfolioPj1 .htmlBar{

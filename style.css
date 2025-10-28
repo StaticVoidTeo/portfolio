@@ -22,7 +22,7 @@ p, h1{
     position:fixed;
     z-index:-1;
     width:100%;
-    height:100%;
+    height:100dvh; /* dynamic view-height */
     top:0;
     left:0;
     object-fit:cover;

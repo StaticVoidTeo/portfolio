@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Teo Kocev Portfolio">
@@ -9,16 +10,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
+    <img id="bodyBg" src="./images/bg.svg" alt="">
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
-    <div class="header" id="down">
-        <img src="tk_logo.png" id="headerLogo" height="50" alt="Teo Kocev">
+
+    <div id="header" class="down">
+        <img src="./images/tk_logo.png" id="headerLogo" height="50" alt="Teo Kocev">
         <div class="langAndMenu">
             <div class="menu">
-                <div id="n" class="menuItem" value="1">About Me</div>
-                <div id="n" class="menuItem" value="2">Skills</div>
-                <div id="n" class="menuItem" value="3">Education</div>
-                <div id="n" class="menuItem" value="4">Portfolio</div>
+                <div class="menuItem" value="1">
+                    <i class="fa-solid fa-house-user"></i>
+                    About Me</div>
+                <div class="menuItem" value="2">
+                    <i class="fa-solid fa-code"></i>
+                    Skills</div>
+                <div class="menuItem" value="3">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    Education</div>
+                <div class="menuItem" value="4">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Portfolio</div>
             </div>
             <div class="menuIcon">
                 <div class="menuLine" style="animation:menuPopUp1 .4s forwards;"></div>
@@ -32,13 +43,12 @@
         </div>
     </div>
     <div class="content">
-        <div id="leftArrow" class="arrow">&#x2039;</div>
-        <div id="rightArrow" class="arrow">&#x203A;</div>
 <!--Section 1-->
         <div class="section" id="mainSecParent" value="1">
-            <div id="mainSec"><img src="pfp_final5.png" height="600" alt="Me" id="mePic">
+            <div id="mainSec">
+                <img src="./images/pfp_final5.png" height="600" alt="Me" id="mePic">
                 <div class="whoAmI">
-                    <div class="h">I am a <span id="developer" style="color:coral;">Developer</span></div>
+                    <div class="h">I am a <br id="devBr"/><span id="developer" style="color:coral;">Developer</span></div>
                     <div class="p" style="opacity:0.9;max-width:500px;">
                         I am a Web Developer 
                         with experience in developing 
@@ -46,153 +56,73 @@
                         technologies like HTML, CSS, 
                         JavaScript, React and more!
                     </div>
-                    <button id="contactBtn" class="button-mine" role="button">Portfolio</button>
                     <div class="meInfo">
                         <div class="infoDiv">
-                            <img src="birthday-cake.png" alt="" height="30">
-                            <div class="p">2006</div>
-                        </div>
-                        <div class="infoDiv">
-                            <img src="macedonia_flag.png" alt="" width="30">
-                            <div class="p">Radovish, Macedonia</div>
-                        </div>
-                        <div class="infoDiv">
-                            <img src="gmail_icon.png" alt="" width="30">
+                            <i class="fa-solid fa-envelope envelope"></i>
                             <div class="p" id="sendEmail" onclick="window.location='https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdKPkjNdFcnfHZpWxqWrKCmfdrDLxxGfphshfDXVvNRCvRpVPTZTbTxsFvRnxRdVZfPXBHg'">teokocevcode@gmail.com</div>
                         </div>
                     </div>
-                </div></div>
-                <form action="https://formspree.io/f/xdoqypyp" method="post">
-                    <h1>‎ Contact</h1>
-                    <label for="name">Fill in your info:</label>
-                    <input placeholder="Name & Surname" name="name" type="text" id="name">
-                    <input placeholder="Email" type="email" name="email">
-                    <label id="textareaLabel" for="textarea">What can I do for you?</label>
-                    <textarea placeholder="Write a message..." name="message" id="message" cols="30" rows="7"></textarea>
-                    <button class="button-mine" id="submit" type="submit">Send</button>
-                </form>
-            <div class="footerParent">
-                <div class="footer">
-                    <p>© 2024. All rights reserved</p>
-                    <img onclick="window.location='https://www.instagram.com/teo_kocev?igsh=Zjc2OXU5MzV1enRz'" src="insta_logo.png" alt="" height="30">
-                    <img onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'" src="linkedin_logo_white.png" alt="" height="30">
+                    <button id="portfolioBtn" class="button-mine" role="button">Portfolio</button>
                 </div>
             </div>
+            <div class="contactHeader">
+                <div class="contactHr"></div>
+                <h1 class="h">Contact</h1>
+                <div class="contactHr"></div>
+            </div>
+            <fieldset class="formFieldSet">
+                <!-- <legend id="formLegend">Contact</legend> -->
+                <form action="https://formspree.io/f/xdoqypyp" method="post">
+                <label for="name">Fill in your info:</label>
+                <input placeholder="Name & Surname" name="name" type="text" id="name">
+                <input placeholder="Email" type="email" name="email">
+                <label id="textareaLabel" for="textarea">What can I do for you?</label>
+                <textarea placeholder="Write a message..." name="message" id="message" cols="30" rows="7"></textarea>
+                <button class="button-mine" id="submit" type="submit">Send</button>
+            </form>
+            </fieldset>
         </div>
 <!--Section 2-->
         <div class="section" id="skillsSec" value="2">
-            <div class="h" style="text-align:center;">Skills</div>
+            <div id="skillsHeader" class="h" style="text-align:center;">Skills</div>
             <div class="overallSkills">
                 <div class="overallSkill">
-                    <h1>Web Development</h1>
+                    <h1 class="heading">Web Development</h1>
                     <div class="p" style="opacity:0.8;">
-                        After being introduced to HTML, I fell in love with creating websites and making them interactive and responsive. I was amazed by the wealth of information available and captivated by the potential to transition from web development to other types of development.
+                        When I first discovered web development, I instantly fell in love with bringing ideas to life online. Building interactive and responsive websites sparked my curiosity and opened my eyes to the vast world of development, inspiring me to keep exploring beyond the web.
                     </div>
                 </div>
                 <div class="overallSkill">
-                    <h1>Web Design</h1>
+                    <h1 class="heading">Web Design</h1>
                     <div class="p" style="opacity:0.8;">
-                        Designing the web pages I create was one of my main goals while studying programming. A website without good design is like a local store where no one shops; it's crucial. Learning about web design was one of the most interesting parts of my journey.
+                        Web design allows me to combine creativity with functionality, turning ideas into visually appealing and user-friendly experiences. I enjoy crafting clean, modern interfaces that not only look great but also make every interaction feel natural and engaging.
                     </div>
                 </div>
             </div>
-            <div class="skills">
-                <div class="skill">
-                    <img title="HTML" src="html_logo.png" height="120" alt="html" value="1">
-                    <div class="skillBar">
-                        <div class="skillBarLoaded" style="width:100%;border-radius:5px;"></div>
-                    </div>
-                    <div class="barInfo">
-                        <p>HTML</p>
-                        <p>100%</p>
-                    </div>
+            <div class="logoLoop">
+                <div class="logoLoopLogos" id="logos1">
+                    <i class="devicon-html5-plain-wordmark skillIcon"></i>
+                    <i class="devicon-css3-plain-wordmark skillIcon"></i>
+                    <i class="devicon-javascript-plain skillIcon"></i>
+                    <i class="devicon-react-original skillIcon"></i>
+                    <i class="devicon-tailwindcss-original skillIcon"></i>
+                    <i class="devicon-firebase-plain-wordmark skillIcon"></i>
+                    <i class="devicon-cplusplus-plain skillIcon"></i>
+                    <i class="devicon-php-plain skillIcon"></i>
+                    <i class="devicon-mysql-plain-wordmark skillIcon"></i>
+                    <i class="devicon-java-plain-wordmark skillIcon"></i>
                 </div>
-                <div class="skill">
-                    <img title="CSS"src="css_logo.png" height="120" alt="css" value="2">
-                    <div class="skillBar">
-                        <div class="skillBarLoaded" style="width:90%;"></div>
-                    </div>
-                    <div class="barInfo">
-                        <p>CSS</p>
-                        <p>90%</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img title="JavaScript" src="JS.svg" height="120" alt="javascript" value="3">
-                    <div class="skillBar">
-                        <div class="skillBarLoaded" style="width:90%;"></div>
-                    </div>
-                    <div class="barInfo">
-                        <p>JavaScript</p>
-                        <p>90%</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img title="React" src="react_logo-512.png" height="120" alt="react.js" value="4">
-                    <div class="skillBar">
-                        <div class="skillBarLoaded" style="width:90%;"></div>
-                    </div>
-                    <div class="barInfo">
-                        <p>React</p>
-                        <p>90%</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img title="C++" src="CPlusPlus.svg" height="120" alt="cplusplus" value="5">
-                    <div class="skillBar">
-                        <div class="skillBarLoaded" style="width:90%;"></div>
-                    </div>
-                    <div class="barInfo">
-                        <p>C++</p>
-                        <p>90%</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img title="Python" src="Python.svg" height="120" alt="python" value="6">
-                    <div class="skillBar">
-                        <div class="skillBarLoaded" style="width:80%;"></div>
-                    </div>
-                    <div class="barInfo">
-                        <p>Python</p>
-                        <p>80%</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img title="MySQL" src="Mysql_logo.png" width="120" alt="mysql" value="7">
-                    <div class="skillBar">
-                        <div class="skillBarLoaded" style="width:100%;border-radius:5px;"></div>
-                    </div>
-                    <div class="barInfo">
-                        <p>MySQL</p>
-                        <p>100%</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img title="PHP" src="PHP.svg" width="120" alt="php" value="8">
-                    <div class="skillBar">
-                        <div class="skillBarLoaded" style="width:90%;"></div>
-                    </div>
-                    <div class="barInfo">
-                        <p>PHP</p>
-                        <p>90%</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img title="Django" src="django-icon.png" height="120" alt="django" value="9">
-                    <div class="skillBar">
-                        <div class="skillBarLoaded" style="width:75%;"></div>
-                    </div>
-                    <div class="barInfo">
-                        <p>Django</p>
-                        <p>75%</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footerParent">
-                <div class="footer">
-                    <p>© 2024. All rights reserved</p>
-                    <img onclick="window.location='https://www.instagram.com/teo_kocev?igsh=Zjc2OXU5MzV1enRz'" src="insta_logo.png" alt="" height="30">
-                    <img onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'" src="linkedin_logo_white.png" alt="" height="30">
+                <div class="logoLoopLogos" id="logos2">
+                    <i class="devicon-html5-plain-wordmark skillIcon"></i>
+                    <i class="devicon-css3-plain-wordmark skillIcon"></i>
+                    <i class="devicon-javascript-plain skillIcon"></i>
+                    <i class="devicon-react-original skillIcon"></i>
+                    <i class="devicon-tailwindcss-original skillIcon"></i>
+                    <i class="devicon-firebase-plain-wordmark skillIcon"></i>
+                    <i class="devicon-cplusplus-plain skillIcon"></i>
+                    <i class="devicon-php-plain skillIcon"></i>
+                    <i class="devicon-mysql-plain-wordmark skillIcon"></i>
+                    <i class="devicon-java-plain-wordmark skillIcon"></i>
                 </div>
             </div>
         </div>
@@ -204,67 +134,31 @@
             <div class="education">
                 <div class="school">
                     <div class="titleAndDate">
-                        <div class="p">Elected as Best Student of the Year</div>
+                        <div class="p heading">Elected as Best Student of the Year</div>
                         <p>Sep. 2021 - Jun. 2022</p>
                     </div>
                 </div>
                 <div class="school">
                     <div class="titleAndDate">
-                        <div class="p">Programming with C++</div>
-                        <p>Oct. 2019 - Jan. 2020</p>
+                        <div class="p heading">Bachelor's in Software Engineering and Inovations</div>
+                        <p>Sep. 2025 - Jun. 2028</p>
                     </div>
                     <div class="edDesc">
-                        During this course, I learned the fundamentals of the C++ programming language and advanced my algorithmic thinking by solving challenging coding problems. This is where my love for programming truly began.
+                        During this degree, I’m learning how to design and build software systems, manage projects, and apply innovative solutions to real-world problems.
                     </div>
                 </div>
                 <div class="school">
                     <div class="titleAndDate">
-                        <div class="p">Advanced C++</div>
-                        <p>Feb. 2020 - Apr. 2020</p>
+                        <div class="p heading">Responsive Web Design</div>
+                        <p>Jan. 2024 - Mar. 2024</p>
                     </div>
                     <div class="edDesc">
-                        During this course, I enhanced my skills with the C++ programming language and learned techniques that got me involved in Algorithms and Data Structures competitions. I've been competing ever since.
+                        During this course, I became very comfortable using HTML, and I especially focused on CSS, learning tricks for better responsive design.
                     </div>
                 </div>
                 <div class="school">
                     <div class="titleAndDate">
-                        <div class="p">Programming with C#</div>
-                        <p>Oct. 2020 - Jan. 2021</p>
-                    </div>
-                    <div class="edDesc">
-                        During this course, I was introduced to the C# programming language and the creation of Windows apps. I learned the fundamentals and how to work in Visual Studio.
-                    </div>
-                </div>
-                <div class="school">
-                    <div class="titleAndDate">
-                        <div class="p">Front End Development</div>
-                        <p>Sep. 2022 - Nov. 2022</p>
-                    </div>
-                    <div class="edDesc">
-                        In this course, I was introduced to web development and the inner workings of the internet. I started learning HTML and CSS, and by the end of the course, I was able to create various types of static websites.
-                    </div>
-                </div>
-                <div class="school">
-                    <div class="titleAndDate">
-                        <div class="p">Programming with JavaScript</div>
-                        <p>Nov. 2022 - Feb. 2023</p>
-                    </div>
-                    <div class="edDesc">
-                        During this course, I learned JavaScript and how to use it to build fully functional web apps. I also learned testing with JEST and got a taste of React. This marked the beginning of my success as a developer.
-                    </div>
-                </div>
-                <div class="school">
-                    <div class="titleAndDate">
-                        <div class="p">Version Control with Git</div>
-                        <p>Mar. 2023 - Apr. 2023</p>
-                    </div>
-                    <div class="edDesc">
-                        During this course, I learned how to use Git and GitHub to manage projects and collaborate with a team on development.
-                    </div>
-                </div>
-                <div class="school">
-                    <div class="titleAndDate">
-                        <div class="p">JavaScript Algorithms and Data Structures</div>
+                        <div class="p heading">JavaScript Algorithms and Data Structures</div>
                         <p>Jan. 2024 - May. 2024</p>
                     </div>
                     <div class="edDesc">
@@ -273,19 +167,57 @@
                 </div>
                 <div class="school">
                     <div class="titleAndDate">
-                        <div class="p">Responsive Web Design</div>
-                        <p>Jan. 2024 - Mar. 2024</p>
+                        <div class="p heading">Version Control with Git</div>
+                        <p>Mar. 2023 - Apr. 2023</p>
                     </div>
                     <div class="edDesc">
-                        During this course, I became very comfortable using HTML, and I especially focused on CSS, learning tricks for better responsive design.
+                        During this course, I learned how to use Git and GitHub to manage projects and collaborate with a team on development.
                     </div>
                 </div>
-            </div>
-            <div class="footerParent">
-                <div class="footer">
-                    <p>© 2024. All rights reserved</p>
-                    <img onclick="window.location='https://www.instagram.com/teo_kocev?igsh=Zjc2OXU5MzV1enRz'" src="insta_logo.png" alt="" height="30">
-                    <img onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'" src="linkedin_logo_white.png" alt="" height="30">
+                <div class="school">
+                    <div class="titleAndDate">
+                        <div class="p heading">Programming with JavaScript</div>
+                        <p>Nov. 2022 - Feb. 2023</p>
+                    </div>
+                    <div class="edDesc">
+                        During this course, I learned JavaScript and how to use it to build fully functional web apps. I also learned testing with JEST and got a taste of React. This marked the beginning of my success as a developer.
+                    </div>
+                </div>
+                <div class="school">
+                    <div class="titleAndDate">
+                        <div class="p heading">Front End Development</div>
+                        <p>Sep. 2022 - Nov. 2022</p>
+                    </div>
+                    <div class="edDesc">
+                        In this course, I was introduced to web development and the inner workings of the internet. I started learning HTML and CSS, and by the end of the course, I was able to create various types of static websites.
+                    </div>
+                </div>
+                <div class="school">
+                    <div class="titleAndDate">
+                        <div class="p heading">Advanced C++</div>
+                        <p>Feb. 2020 - Apr. 2020</p>
+                    </div>
+                    <div class="edDesc">
+                        During this course, I enhanced my skills with the C++ programming language and learned techniques that got me involved in Algorithms and Data Structures competitions. I've been competing ever since.
+                    </div>
+                </div>
+                <div class="school">
+                    <div class="titleAndDate">
+                        <div class="p heading">Programming with C#</div>
+                        <p>Oct. 2020 - Jan. 2021</p>
+                    </div>
+                    <div class="edDesc">
+                        During this course, I was introduced to the C# programming language and the creation of Windows apps. I learned the fundamentals and how to work in Visual Studio.
+                    </div>
+                </div>
+                <div class="school">
+                    <div class="titleAndDate">
+                        <div class="p heading">Programming with C++</div>
+                        <p>Oct. 2019 - Jan. 2020</p>
+                    </div>
+                    <div class="edDesc">
+                        During this course, I learned the fundamentals of the C++ programming language and advanced my algorithmic thinking by solving challenging coding problems. This is where my love for programming truly began.
+                    </div>
                 </div>
             </div>
         </div>
@@ -295,9 +227,91 @@
                 <div class="h" style="text-align:center;">Portfolio</div>
             </div>
             <div class="projects">
+                <div class="project" id="gdforum" onclick="window.location= 'https://gdforum.netlify.app/'">
+                    <div class="imageCover"></div>
+                    <img src="./projects/forum.png">
+                    <div class="projectDiamond"></div>
+                </div>
+                <div class="projectSide" id="gdforum1">
+                    <div class="projectDesc">
+                        <div class="bulletPoint">
+                            <div class="bulletPointCenter"></div>
+                        </div>
+                        <div class="p">
+                            I built a web forum for dorm residents to communicate, share updates, and organize events, improving my front-end and database skills.
+                        </div>
+                    </div>
+                    <div class="langBar">
+                        <div class="bar">
+                            <div class="htmlBar"></div>
+                            <div class="cssBar"></div>
+                            <div class="jsBar"></div>
+                        </div>
+                        <div class="percanteges">
+                            <h4 style="display:flex;align-items:center;"> <span style="color:white;font-size:30px;">&#8226</span>‎ HTML</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:coral;font-size:30px;">&#8226</span>‎ CSS</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:yellow;font-size:30px;">&#8226</span>‎ JS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="kolenehtenin" onclick="window.location= 'https://kolenehtenin.edu.mk/'">
+                    <div class="imageCover"></div>
+                    <img src="./projects/kolenehtenin.png">
+                    <div class="projectDiamond"></div>
+                </div>
+                <div class="projectSide" id="kolenehtenin1">
+                    <div class="projectDesc">
+                        <div class="bulletPoint">
+                            <div class="bulletPointCenter"></div>
+                        </div>
+                        <div class="p">
+                            I developed a new website for a high school to replace their outdated one. They were so happy with the result that they gifted me a personalized watch. I also manage the website and its database.
+                        </div>
+                    </div>
+                    <div class="langBar">
+                        <div class="bar">
+                            <div class="htmlBar"></div>
+                            <div class="cssBar"></div>
+                            <div class="jsBar"></div>
+                        </div>
+                        <div class="percanteges">
+                            <h4 style="display:flex;align-items:center;"> <span style="color:white;font-size:30px;">&#8226</span>‎ HTML</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:coral;font-size:30px;">&#8226</span>‎ CSS</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:yellow;font-size:30px;">&#8226</span>‎ JS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="portfolio2" onclick="window.location= 'https://staticvoidteo.github.io/portfolio2/'">
+                    <div class="imageCover"></div>
+                    <img src="./projects/portfolio2.png">
+                    <div class="projectDiamond"></div>
+                </div>
+                <div class="projectSide" id="portfolio2_1">
+                    <div class="projectDesc">
+                        <div class="bulletPoint">
+                            <div class="bulletPointCenter"></div>
+                        </div>
+                        <div class="p">
+                            I developed my second personal portfolio using React to showcase my projects and skills in a clean, interactive, and fully responsive design.
+                        </div>
+                    </div>
+                    <div class="langBar">
+                        <div class="bar">
+                            <div class="htmlBar"></div>
+                            <div class="cssBar"></div>
+                            <div class="jsBar"></div>
+                        </div>
+                        <div class="percanteges">
+                            <h4 style="display:flex;align-items:center;"> <span style="color:white;font-size:30px;">&#8226</span>‎ HTML</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:coral;font-size:30px;">&#8226</span>‎ CSS</h4>
+                            <h4 style="display:flex;align-items:center;"> <span style="color:yellow;font-size:30px;">&#8226</span>‎ JS</h4>
+                        </div>
+                    </div>
+                </div>
                 <div class="project" id="evroprint" onclick="window.location= 'https://staticvoidteo.github.io/evroprint'">
                     <div class="imageCover"></div>
-                    <img src="pj5.png">
+                    <img src="./projects/evroprint.png">
+                    <div class="projectDiamond"></div>
                 </div>
                 <div class="projectSide" id="evroprint1">
                     <div class="projectDesc">
@@ -324,7 +338,8 @@
                 </div>
                 <div class="project" id="twitter" onclick="window.location='https://staticvoidteo.github.io/twitter-clone'">
                     <div class="imageCover"></div>
-                    <img src="pj11.png">
+                    <img src="./projects/twitter_clone.png">
+                    <div class="projectDiamond"></div>
                 </div>
                 <div class="projectSide" id="twitter1">
                     <div class="projectDesc">
@@ -350,7 +365,8 @@
                 </div>
                 <div class="project" id="portfolioPj" onclick="window.location= 'index.html'">
                     <div class="imageCover"></div>
-                    <img src="pj6.png">
+                    <img src="./projects/portfolio.png">
+                    <div class="projectDiamond"></div>
                 </div>
                 <div class="projectSide" id="portfolioPj1">
                     <div class="projectDesc">
@@ -377,7 +393,8 @@
                 </div>
                 <div class="project" id="uprize" onclick="window.location= 'https://staticvoidteo.github.io/uprize/'">
                     <div class="imageCover"></div>
-                    <img src="pj3.png">
+                    <img src="./projects/uprize.png">
+                    <div class="projectDiamond"></div>
                 </div>
                 <div class="projectSide" id="uprize1">
                     <div class="projectDesc">
@@ -402,18 +419,17 @@
                         </div>
                     </div>
                 </div>
-                
-            </div>
-            <div class="footerParent">
-                <div class="footer">
-                    <p>© 2024. All rights reserved</p>
-                    <img onclick="window.location='https://www.instagram.com/teo_kocev?igsh=Zjc2OXU5MzV1enRz'" src="insta_logo.png" alt="" height="30">
-                    <img onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'" src="linkedin_logo_white.png" alt="" height="30">
-                </div>
             </div>
         </div>
 <!--Section 5-->
+        <div class="footerParent">
+            <div class="footer">
+                <p>© 2025. All rights reserved</p>
+                <img onclick="window.location='https://www.linkedin.com/in/teo-kocev-0666392a7/'" src="./images/linkedin_logo_white.png" alt="" height="30">
+            </div>
+        </div>
     </div>
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/96e370b9f1.js" crossorigin="anonymous"></script>
 </body>
 </html>
